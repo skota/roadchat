@@ -29,6 +29,8 @@ config :roadchat, RoadchatWeb.Endpoint,
 # at the `config/runtime.exs`.
 config :roadchat, Roadchat.Mailer, adapter: Swoosh.Adapters.Local
 
+config :swoosh, :api_client, Swoosh.ApiClient.Hackney
+
 # Configure esbuild (the version is required)
 config :esbuild,
   version: "0.17.11",
@@ -52,9 +54,37 @@ config :tailwind,
   ]
 
 # Configures Elixir's Logger
-config :logger, :console,
-  format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+# config :logger, :console,
+#   format: "$time $metadata[$level] $message\n",
+#   metadata: [:request_id]
+# tell logger to load a LoggerFileBackend processes
+config :logger,
+  backends: [:console, {LoggerFileBackend, :error_log},
+             {LoggerFileBackend, :info_log}],
+  format: "$time $metadata[$level] $message\n"
+
+# configuration for the {LoggerFileBackend, :error_log} backend
+config :logger, :error_log,
+  path: "logs/error.log",
+  level: :error
+
+# configuration for the {LoggerFileBackend, :error_log} backend
+config :logger, :info_log,
+  path: "logs/info.log",
+  level: :info
+
+
+# guardian stuff
+config :roadchat, Roadchat.Guardian,
+  issuer: "roadchat",
+  secret_key: "BY8grm00++tVtByLhHG15he/3GlUG0rOSLmP2/2cbIRwdR4xJk1RHvqGHPFuNcF8",
+  ttl: {30, :days}
+
+config :roadchat, Roadchat.AuthAccessPipeline,
+  module: Roadchat.Guardian,
+  error_handler: Roadchat.AuthErrorHandler
+
+
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason

@@ -32,6 +32,7 @@ defmodule Roadchat.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:bcrypt_elixir, "~> 3.0"},
       {:phoenix, "~> 1.7.7"},
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.10"},
@@ -49,7 +50,16 @@ defmodule Roadchat.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+      {:stripity_stripe, "~> 3.0"},
+      {:guardian, "~> 2.3"},
+      {:logger_file_backend, "~> 0.0.13"},
+      {:geo, "~> 3.5"},
+      {:geo_postgis, "~> 3.5"},
+      {:paginator, "~> 1.2"},
+      {:timex, "~> 3.7"},
+      {:ex_cldr, "~> 2.37"},
+      {:ex_cldr_numbers, "~> 2.0"},
     ]
   end
 

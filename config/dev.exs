@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :roadchat, Roadchat.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "sriramkota",
+  password: "",
   hostname: "localhost",
   database: "roadchat_dev",
   stacktrace: true,
