@@ -37,4 +37,6 @@ npm-debug.log
 
 .txt
 
+/logs
+
 .env
