@@ -6,23 +6,9 @@ defmodule RoadchatWeb.Api.V1.UserRegistrationController do
   require Logger
 
   def create(conn, %{"user" => user_params}) do
-    IO.inspect user_params
-    country = user_params["country"]
-
-    user_params =
-      if country == "Other" do
-        Map.put(user_params, "country", "USA")
-      else
-        user_params
-      end
-
-    # set user type
-    user_params = Map.put(user_params, "user_type", "u")
-
     case Accounts.register_user(user_params) do
       {:ok, user} ->
         IO.inspect("created user")
-
         conn =
           conn
           |> put_status(201)
@@ -31,7 +17,7 @@ defmodule RoadchatWeb.Api.V1.UserRegistrationController do
 
       {:error, %Ecto.Changeset{} = changeset} ->
         # send back error
-        IO.inspect("Unable to create user")
+        IO.inspect changeset
         Logger.info("Unable to create user")
 
         conn =
@@ -39,8 +25,10 @@ defmodule RoadchatWeb.Api.V1.UserRegistrationController do
           |> put_status(401)
 
         {:error, errors} = UtilHelpers.return_errors(changeset)
+
+        IO.inspect errors
         # errors = ChangesetErrors.translate_errors(changeset)
-        json(conn, %{error: errors})
+        json(conn, errors)
     end
   end
 

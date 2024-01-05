@@ -24,7 +24,6 @@ defmodule RoadchatWeb.Router do
 
   scope "/", RoadchatWeb do
     pipe_through :browser
-
     get "/", PageController, :home
   end
 
@@ -43,41 +42,44 @@ defmodule RoadchatWeb.Router do
   scope "/api/v1", RoadchatWeb, as: :api do
     pipe_through [:api, :api_authenticated]
 
+    #  posts
     get "/posts", API.V1.PostController, :index
     get "/refresh", API.V1.PostController, :refresh
     post "/posts", API.V1.PostController, :create
+    get "/post/:id", API.V1.PostController, :get_post
+
+    post "/commentcount", API.V1.PostController, :comment_count
+
+    post "/like", API.V1.PostController, :like_post
+    post "/unlike", API.V1.PostController, :unlike_post
+
+    # comments
+    get "/comments/:id", API.V1.CommentController, :index
+    post "/comment", API.V1.CommentController, :create
+
+    # profile
     get "/userdetails/:id", API.V1.ProfileController, :userdetails
     post "/userdetails/:id", API.V1.ProfileController, :update
 
-        # create
-        # post "/sale", API.V1.SaleController, :create
-        # get "/sales", API.V1.SaleController, :index
-        # get "/sale/:id", API.V1.SaleController, :get_sale
-        # put "/sale/:id", API.V1.SaleController, :update_sale
+    get "/likes/:user_id", API.V1.PostController, :get_post_likes
 
-        get "/users/:id", API.V1.ListUserController, :index
+    get "/users/:id", API.V1.ListUserController, :index
 
-        # get comments
-        get "/comments/:id", API.V1.CommentController, :index
-        post "/comment", API.V1.CommentController, :create
+    resources "/cards", API.V1.CustomerCardController
+    get "/customercards/:id", API.V1.CustomerCardController, :get_card
+    get "/details_by_paymentmethod/:payment_method_id", API.V1.CustomerCardController, :get_card_details_by_paymentmethod
 
-        post "/commentcount", API.V1.PostController, :comment_count
-
-        # post "/like", PostController, :like_post
-        # post "/unlike", PostController, :unlike_post
-
-        resources "/cards", API.V1.CustomerCardController
-
-        get "/customercards/:id", API.V1.CustomerCardController, :get_card
-        get "/details_by_paymentmethod/:payment_method_id", API.V1.CustomerCardController, :get_card_details_by_paymentmethod
-
-        get "/getloggedinusers/:id", API.V1.LoggedinUsersController, :get_users_in_range
-        post "/loggedinuser", API.V1.LoggedinUsersController, :user_logged_in
-        post "/loggedoutuser", API.V1.LoggedinUsersController, :user_logged_out
-        post "/updategeo", API.V1.LoggedinUsersController, :update_geo_position
-        get "/istokenvalid", API.V1.LoggedinUsersController, :is_token_valid
+    get "/getloggedinusers/:id", API.V1.LoggedinUsersController, :get_users_in_range
+    post "/loggedinuser", API.V1.LoggedinUsersController, :user_logged_in
+    post "/loggedoutuser", API.V1.LoggedinUsersController, :user_logged_out
+    post "/updategeo", API.V1.LoggedinUsersController, :update_geo_position
+    get "/istokenvalid", API.V1.LoggedinUsersController, :is_token_valid
 
 
+    # might not need these...as we are using firebase to store assets
+    get "/profile_presigned_url/:filename", API.V1.S3Controller, :get_profile_presigned_url
+    get "/post_presigned_url/:filename", API.V1.S3Controller, :get_post_presigned_url
+    get "/item_presigned_url/:filename", API.V1.S3Controller, :get_item_presigned_url
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development

@@ -16,7 +16,7 @@ defmodule RoadchatWeb.API.V1.ProfileController do
     IO.puts "updating user"
     IO.inspect user
 
-    User.update_changeset(user, user_params)
+    User.profile_changeset(user, user_params)
     |> Repo.update()
 
     conn

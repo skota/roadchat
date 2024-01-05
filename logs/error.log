@@ -1,0 +1,1264 @@
+23:06:56.903 [error] #PID<0.664.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.604.0>, stream id 3) terminated
+Server: localhost:4000 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 23502 (not_null_violation) null value in column "fname" of relation "users" violates not-null constraint
+
+    table: users
+    column: fname
+
+Failing row contains (1, sriram.kota@gmail.com, $2b$12$AxkPSTK0PKCw/QdJmmPB1uYClsfiT2ozoilVhEDczcQntLYMNdGeS, null, null, null, null, 2023-10-06 03:06:56, 2023-10-06 03:06:56, null, null, null).
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:764: Ecto.Repo.Schema.apply/4
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:377: anonymous fn/15 in Ecto.Repo.Schema.do_insert/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:9: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+23:11:55.611 [error] #PID<0.629.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.628.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 23502 (not_null_violation) null value in column "fname" of relation "users" violates not-null constraint
+
+    table: users
+    column: fname
+
+Failing row contains (2, sriram.kota@gmail.com, $2b$12$dGopdcQ8iFhPpQ9VC8gFMeyVTj1fHEm3z2QFQ8dxlKw8z3d4WCoR2, null, null, null, null, 2023-10-06 03:11:55, 2023-10-06 03:11:55, null, null, null).
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:764: Ecto.Repo.Schema.apply/4
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:377: anonymous fn/15 in Ecto.Repo.Schema.do_insert/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:9: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+09:51:08.762 [error] #PID<0.755.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.754.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: POST /api/v1/users/login
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Roadchat.Repos.CustomerCards.list_cards/1 is undefined or private
+        (roadchat 0.1.0) Roadchat.Repos.CustomerCards.list_cards(3)
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:31: RoadchatWeb.Api.V1.UserSessionController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:1: RoadchatWeb.Api.V1.UserSessionController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:1: RoadchatWeb.Api.V1.UserSessionController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+09:55:46.777 [error] #PID<0.770.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.769.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: POST /api/v1/users/login
+** (exit) an exception was raised:
+    ** (MatchError) no match of right hand side value: {:error, :secret_not_found}
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:41: RoadchatWeb.Api.V1.UserSessionController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:1: RoadchatWeb.Api.V1.UserSessionController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:1: RoadchatWeb.Api.V1.UserSessionController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+09:56:48.266 [error] #PID<0.569.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.568.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: POST /api/v1/users/login
+** (exit) an exception was raised:
+    ** (MatchError) no match of right hand side value: {:error, :secret_not_found}
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:41: RoadchatWeb.Api.V1.UserSessionController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:1: RoadchatWeb.Api.V1.UserSessionController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:1: RoadchatWeb.Api.V1.UserSessionController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+09:58:46.752 [error] #PID<0.611.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.610.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: POST /api/v1/users/login
+** (exit) an exception was raised:
+    ** (KeyError) key :minutes not found in: #Roadchat.Accounts.User<
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  id: 3,
+  email: "sriram.kota@gmail.com",
+  confirmed_at: nil,
+  fname: "sriram",
+  lname: "kota",
+  fb_user_id: nil,
+  fb_password: nil,
+  avatar: nil,
+  stripe_cust_id: nil,
+  inserted_at: ~N[2023-10-06 03:12:43],
+  updated_at: ~N[2023-10-06 03:12:43],
+  ...
+>
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:48: RoadchatWeb.Api.V1.UserSessionController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:1: RoadchatWeb.Api.V1.UserSessionController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:1: RoadchatWeb.Api.V1.UserSessionController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+17:01:11.809 [error] #PID<0.948.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.947.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (ArgumentError) cannot convert the given list to a string.
+
+To be converted to a string, a list must either be empty or only
+contain the following elements:
+
+  * strings
+  * integers representing Unicode code points
+  * a list containing one of these three elements
+
+Please check the given list or call inspect/1 to get the list representation, got:
+
+[:email]
+
+        (elixir 1.15.0) lib/list.ex:1084: List.to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:76: anonymous fn/2 in Roadchat.UtilHelpers.changeset_error_to_string/1
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3744: anonymous fn/3 in Ecto.Changeset.merge_keyword_keys/3
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3738: Ecto.Changeset.traverse_errors/2
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:74: Roadchat.UtilHelpers.changeset_error_to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:69: Roadchat.UtilHelpers.return_errors/1
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:27: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+17:02:59.418 [error] #PID<0.1004.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1003.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (ArgumentError) cannot convert the given list to a string.
+
+To be converted to a string, a list must either be empty or only
+contain the following elements:
+
+  * strings
+  * integers representing Unicode code points
+  * a list containing one of these three elements
+
+Please check the given list or call inspect/1 to get the list representation, got:
+
+[:email]
+
+        (elixir 1.15.0) lib/list.ex:1084: List.to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:76: anonymous fn/2 in Roadchat.UtilHelpers.changeset_error_to_string/1
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3744: anonymous fn/3 in Ecto.Changeset.merge_keyword_keys/3
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3738: Ecto.Changeset.traverse_errors/2
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:74: Roadchat.UtilHelpers.changeset_error_to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:69: Roadchat.UtilHelpers.return_errors/1
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:28: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+17:03:40.144 [error] #PID<0.1017.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1016.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (ArgumentError) cannot convert the given list to a string.
+
+To be converted to a string, a list must either be empty or only
+contain the following elements:
+
+  * strings
+  * integers representing Unicode code points
+  * a list containing one of these three elements
+
+Please check the given list or call inspect/1 to get the list representation, got:
+
+[:email]
+
+        (elixir 1.15.0) lib/list.ex:1084: List.to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:76: anonymous fn/2 in Roadchat.UtilHelpers.changeset_error_to_string/1
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3744: anonymous fn/3 in Ecto.Changeset.merge_keyword_keys/3
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3738: Ecto.Changeset.traverse_errors/2
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:74: Roadchat.UtilHelpers.changeset_error_to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:69: Roadchat.UtilHelpers.return_errors/1
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:28: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+17:04:57.521 [error] #PID<0.1106.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1105.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (ArgumentError) cannot convert the given list to a string.
+
+To be converted to a string, a list must either be empty or only
+contain the following elements:
+
+  * strings
+  * integers representing Unicode code points
+  * a list containing one of these three elements
+
+Please check the given list or call inspect/1 to get the list representation, got:
+
+[:email]
+
+        (elixir 1.15.0) lib/list.ex:1084: List.to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:76: anonymous fn/2 in Roadchat.UtilHelpers.changeset_error_to_string/1
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3744: anonymous fn/3 in Ecto.Changeset.merge_keyword_keys/3
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3738: Ecto.Changeset.traverse_errors/2
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:74: Roadchat.UtilHelpers.changeset_error_to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:69: Roadchat.UtilHelpers.return_errors/1
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:28: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+17:07:21.057 [error] #PID<0.1183.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1182.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (ArgumentError) cannot convert the given list to a string.
+
+To be converted to a string, a list must either be empty or only
+contain the following elements:
+
+  * strings
+  * integers representing Unicode code points
+  * a list containing one of these three elements
+
+Please check the given list or call inspect/1 to get the list representation, got:
+
+[:email]
+
+        (elixir 1.15.0) lib/list.ex:1084: List.to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:76: anonymous fn/2 in Roadchat.UtilHelpers.changeset_error_to_string/1
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3744: anonymous fn/3 in Ecto.Changeset.merge_keyword_keys/3
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3738: Ecto.Changeset.traverse_errors/2
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:74: Roadchat.UtilHelpers.changeset_error_to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:69: Roadchat.UtilHelpers.return_errors/1
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:28: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+17:09:22.945 [error] #PID<0.1273.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1272.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (ArgumentError) cannot convert the given list to a string.
+
+To be converted to a string, a list must either be empty or only
+contain the following elements:
+
+  * strings
+  * integers representing Unicode code points
+  * a list containing one of these three elements
+
+Please check the given list or call inspect/1 to get the list representation, got:
+
+[:email]
+
+        (elixir 1.15.0) lib/list.ex:1084: List.to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:76: anonymous fn/2 in Roadchat.UtilHelpers.changeset_error_to_string/1
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3744: anonymous fn/3 in Ecto.Changeset.merge_keyword_keys/3
+        (elixir 1.15.0) lib/enum.ex:2510: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto 3.10.3) lib/ecto/changeset.ex:3738: Ecto.Changeset.traverse_errors/2
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:74: Roadchat.UtilHelpers.changeset_error_to_string/1
+        (roadchat 0.1.0) lib/roadchat/util_helpers.ex:69: Roadchat.UtilHelpers.return_errors/1
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:28: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+18:19:49.166 [error] #PID<0.2004.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.2003.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1//users/login
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Jason.Encoder not implemented for #Roadchat.Accounts.User<__meta__: #Ecto.Schema.Metadata<:loaded, "users">, id: 3, email: "sriram.kota@gmail.com", confirmed_at: nil, fname: "sriram", lname: "kota", fb_user_id: nil, fb_password: nil, avatar: nil, stripe_cust_id: nil, inserted_at: ~N[2023-10-06 03:12:43], updated_at: ~N[2023-10-06 03:12:43], ...> of type Roadchat.Accounts.User (a struct), Jason.Encoder protocol must always be explicitly implemented.
+
+If you own the struct, you can derive the implementation specifying which fields should be encoded to JSON:
+
+    @derive {Jason.Encoder, only: [....]}
+    defstruct ...
+
+It is also possible to encode all fields, although this should be used carefully to avoid accidentally leaking private information when new fields are added:
+
+    @derive Jason.Encoder
+    defstruct ...
+
+Finally, if you don't own the struct you want to encode to JSON, you may use Protocol.derive/3 placed outside of any module:
+
+    Protocol.derive(Jason.Encoder, NameOfTheStruct, only: [...])
+    Protocol.derive(Jason.Encoder, NameOfTheStruct)
+. This protocol is implemented for the following type(s): Any, Atom, BitString, Cldr.LanguageTag, Date, DateTime, Decimal, Ecto.Association.NotLoaded, Ecto.Schema.Metadata, Float, Geo.GeometryCollection, Geo.LineString, Geo.LineStringZ, Geo.MultiLineString, Geo.MultiLineStringZ, Geo.MultiPoint, Geo.MultiPointZ, Geo.MultiPolygon, Geo.MultiPolygonZ, Geo.Point, Geo.PointM, Geo.PointZ, Geo.PointZM, Geo.Polygon, Geo.PolygonZ, Integer, Jason.Fragment, Jason.OrderedObject, List, Map, NaiveDateTime, Roadchat.Schemas.Post, Roadchat.Schemas.Sale, Time
+        (jason 1.4.1) lib/jason.ex:213: Jason.encode_to_iodata!/2
+        (phoenix 1.7.7) lib/phoenix/controller.ex:364: Phoenix.Controller.json/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:1: RoadchatWeb.Api.V1.UserSessionController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_session_controller.ex:1: RoadchatWeb.Api.V1.UserSessionController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+23:03:18.218 [error] Postgrex.Protocol (#PID<0.462.0>) disconnected: ** (Postgrex.QueryError) type `geometry` can not be handled by the types module Postgrex.DefaultTypes
+23:03:18.255 [error] #PID<0.1638.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1637.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/loggedoutuser
+** (exit) an exception was raised:
+    ** (Postgrex.QueryError) type `geometry` can not be handled by the types module Postgrex.DefaultTypes
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:48: RoadchatWeb.API.V1.LoggedinUsersController.user_logged_out/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+23:10:12.718 [error] Postgrex.Protocol (#PID<0.464.0>) disconnected: ** (Postgrex.QueryError) type `geometry` can not be handled by the types module Postgrex.DefaultTypes
+23:10:12.742 [error] #PID<0.1727.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1726.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/loggedoutuser
+** (exit) an exception was raised:
+    ** (Postgrex.QueryError) type `geometry` can not be handled by the types module Postgrex.DefaultTypes
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:48: RoadchatWeb.API.V1.LoggedinUsersController.user_logged_out/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+23:11:05.153 [error] Postgrex.Protocol (#PID<0.460.0>) disconnected: ** (Postgrex.QueryError) type `geometry` can not be handled by the types module Postgrex.DefaultTypes
+23:11:05.173 [error] #PID<0.1764.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1763.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/loggedoutuser
+** (exit) an exception was raised:
+    ** (Postgrex.QueryError) type `geometry` can not be handled by the types module Postgrex.DefaultTypes
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:48: RoadchatWeb.API.V1.LoggedinUsersController.user_logged_out/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+12:01:42.518 [error] Postgrex.Protocol (#PID<0.481.0>) disconnected: ** (Postgrex.QueryError) type `geometry` can not be handled by the types module Postgrex.DefaultTypes
+12:01:42.550 [error] #PID<0.672.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.671.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/loggedoutuser
+** (exit) an exception was raised:
+    ** (Postgrex.QueryError) type `geometry` can not be handled by the types module Postgrex.DefaultTypes
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:55: RoadchatWeb.API.V1.LoggedinUsersController.user_logged_out/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+12:04:36.687 [error] Postgrex.Protocol (#PID<0.504.0>) disconnected: ** (Postgrex.QueryError) type `geometry` can not be handled by the types module Postgrex.DefaultTypes
+12:04:36.708 [error] #PID<0.704.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.703.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/loggedinuser
+** (exit) an exception was raised:
+    ** (Postgrex.QueryError) type `geometry` can not be handled by the types module Postgrex.DefaultTypes
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:34: RoadchatWeb.API.V1.LoggedinUsersController.user_logged_in/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+12:44:27.220 [error] #PID<0.645.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.644.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: GET /api/v1/post_presigned_url/3_post_2023-10-09%2012:44:26.961965
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function RoadchatWeb.S3Controller.init/1 is undefined (module RoadchatWeb.S3Controller is not available)
+        RoadchatWeb.S3Controller.init(:get_post_presigned_url)
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+16:50:33.204 [error] #PID<0.8223.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.8222.0>, stream id 1) terminated
+Server: cd1e-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1//userdetails/3
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Roadchat.Accounts.User.update_changeset/2 is undefined or private
+        (roadchat 0.1.0) Roadchat.Accounts.User.update_changeset(#Roadchat.Accounts.User<__meta__: #Ecto.Schema.Metadata<:loaded, "users">, id: 3, email: "sriram.kota@gmail.com", confirmed_at: nil, fname: "sriram", lname: "kota", fb_user_id: nil, fb_password: nil, avatar: nil, stripe_cust_id: nil, inserted_at: ~N[2023-10-06 03:12:43], updated_at: ~N[2023-10-06 03:12:43], ...>, %{"avatar" => "https://roadchat.s3.amazonaws.com/profile/3.jpg"})
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/profile_controller.ex:19: RoadchatWeb.API.V1.ProfileController.update/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/profile_controller.ex:1: RoadchatWeb.API.V1.ProfileController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/profile_controller.ex:1: RoadchatWeb.API.V1.ProfileController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+11:30:49.067 [error] #PID<0.1480.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1479.0>, stream id 1) terminated
+Server: 0d10-74-88-60-110.ngrok-free.app:80 (http)
+Request: GET /api/v1/likes
+** (exit) an exception was raised:
+    ** (ArgumentError) cannot load `12` as type :string for field :post_id in %Roadchat.Schemas.Like{__meta__: #Ecto.Schema.Metadata<:loaded, "likes">, id: nil, post_id: nil, user_id: nil, like_count: nil, inserted_at: nil, updated_at: nil}
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:419: Ecto.Repo.Queryable.struct_load!/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:243: anonymous fn/5 in Ecto.Repo.Queryable.preprocessor/3
+        (elixir 1.15.0) lib/enum.ex:1693: Enum."-map/2-lists^map/1-1-"/2
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:234: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:42: RoadchatWeb.API.V1.PostController.get_post_likes/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3.1.1) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+10:45:07.953 [error] #PID<0.4216.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.4202.0>, stream id 2) terminated
+Server: f306-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 23502 (not_null_violation) null value in column "fname" of relation "users" violates not-null constraint
+
+    table: users
+    column: fname
+
+Failing row contains (6, sriram.kota2@gmail.com, $2b$12$QGp14hpUDAM2sL2kJ8zyLe2ykYhkJsv0LoznHQo2zWzYen8bsbaD2, null, null, null, null, 2023-12-02 15:45:07, 2023-12-02 15:45:07, null, null, null).
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:764: Ecto.Repo.Schema.apply/4
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:377: anonymous fn/15 in Ecto.Repo.Schema.do_insert/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:9: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.0) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+10:45:25.039 [error] #PID<0.4229.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.4202.0>, stream id 3) terminated
+Server: f306-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 23502 (not_null_violation) null value in column "lname" of relation "users" violates not-null constraint
+
+    table: users
+    column: lname
+
+Failing row contains (7, sriram.kota2@gmail.com, $2b$12$Yt3z6TSgSgpq9Fm20pt98uit63QBVnVUvjct1mTrbtVEOb2/gL1wu, null, sriram, null, null, 2023-12-02 15:45:25, 2023-12-02 15:45:25, null, null, null).
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:764: Ecto.Repo.Schema.apply/4
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:377: anonymous fn/15 in Ecto.Repo.Schema.do_insert/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:9: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.0) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+10:45:44.101 [error] #PID<0.4240.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.4202.0>, stream id 4) terminated
+Server: f306-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 23502 (not_null_violation) null value in column "lname" of relation "users" violates not-null constraint
+
+    table: users
+    column: lname
+
+Failing row contains (8, sriram.kota2@gmail.com, $2b$12$6RX4KSZIOwBpp6yT6g/1nOXbqVvZe6zTkPkeU3Fx/IbwIi3b7sR7O, null, sriram, null, null, 2023-12-02 15:45:44, 2023-12-02 15:45:44, null, null, null).
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:764: Ecto.Repo.Schema.apply/4
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:377: anonymous fn/15 in Ecto.Repo.Schema.do_insert/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:9: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.0) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+10:57:18.022 [error] #PID<0.4292.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.4291.0>, stream id 1) terminated
+Server: f306-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 23502 (not_null_violation) null value in column "lname" of relation "users" violates not-null constraint
+
+    table: users
+    column: lname
+
+Failing row contains (10, sriram.kota@mail.com, $2b$12$up89uSKmEMUwsOwBpbe5reg4MS23uT82uMOlm.gSqaOjzqxK2wgXC, null, sriram, null, null, 2023-12-02 15:57:17, 2023-12-02 15:57:17, null, null, null).
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:764: Ecto.Repo.Schema.apply/4
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:377: anonymous fn/15 in Ecto.Repo.Schema.do_insert/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:9: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.0) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+14:47:49.099 [error] #PID<0.4876.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.4875.0>, stream id 1) terminated
+Server: f306-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 23502 (not_null_violation) null value in column "lname" of relation "users" violates not-null constraint
+
+    table: users
+    column: lname
+
+Failing row contains (11, jdoe@mail.com, $2b$12$o0OPWsz/8KWbrKbGDJmiPOFyt67yB5ezrOPOg2ds92CHqrH3dzpGC, null, Jon, null, null, 2023-12-02 19:47:49, 2023-12-02 19:47:49, null, null, null).
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:764: Ecto.Repo.Schema.apply/4
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:377: anonymous fn/15 in Ecto.Repo.Schema.do_insert/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:9: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.0) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+14:48:25.680 [error] #PID<0.4891.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.4890.0>, stream id 1) terminated
+Server: f306-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 23502 (not_null_violation) null value in column "lname" of relation "users" violates not-null constraint
+
+    table: users
+    column: lname
+
+Failing row contains (12, jdoe@gmail.com, $2b$12$A7ECia/U4y8i.OdRp.Zzk.Ikfctp6ZXxg1ObamSbrpJwPjv0t6msm, null, sriram, null, null, 2023-12-02 19:48:25, 2023-12-02 19:48:25, null, null, null).
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:764: Ecto.Repo.Schema.apply/4
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:377: anonymous fn/15 in Ecto.Repo.Schema.do_insert/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:9: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.0) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+11:52:58.318 [error] #PID<0.5897.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.5896.0>, stream id 1) terminated
+Server: f306-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/users/register
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 23502 (not_null_violation) null value in column "fname" of relation "users" violates not-null constraint
+
+    table: users
+    column: fname
+
+Failing row contains (17, jdoe@gmail.com, $2b$12$yH69NBmViSDPuzGnUwoff.vjISGCyhTwznB2YzllifKieojmp4/o., null, null, null, null, 2023-12-03 16:52:58, 2023-12-03 16:52:58, null, null, null).
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:764: Ecto.Repo.Schema.apply/4
+        (ecto 3.10.3) lib/ecto/repo/schema.ex:377: anonymous fn/15 in Ecto.Repo.Schema.do_insert/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:9: RoadchatWeb.Api.V1.UserRegistrationController.create/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/user_registration_controller.ex:1: RoadchatWeb.Api.V1.UserRegistrationController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.0) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+12:38:00.556 [error] #PID<0.693.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.614.0>, stream id 3) terminated
+Server: f5c4-74-88-60-110.ngrok-free.app:80 (http)
+Request: GET /api/v1/post/1
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Roadchat.Repos.Posts.get_post!/1 is undefined or private
+        (roadchat 0.1.0) Roadchat.Repos.Posts.get_post!(1)
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:113: RoadchatWeb.API.V1.PostController.get_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.0) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+14:08:24.385 [error] #PID<0.1355.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1354.0>, stream id 1) terminated
+Server: f5c4-74-88-60-110.ngrok-free.app:80 (http)
+Request: GET /api/v1/comments/1
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42703 (undefined_column) column c0.fname does not exist
+
+    query: SELECT c0."id", c0."post_id", c0."user_id", c0."fname", c0."lname", c0."comment", c0."inserted_at", c0."avatar" FROM "comments" AS c0 INNER JOIN "users" AS u1 ON c0."user_id" = u1."id" WHERE (c0."post_id" = $1)
+
+    hint: Perhaps you meant to reference the column "u1.fname".
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/comment_controller.ex:9: RoadchatWeb.API.V1.CommentController.index/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/comment_controller.ex:1: RoadchatWeb.API.V1.CommentController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/comment_controller.ex:1: RoadchatWeb.API.V1.CommentController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.0) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+17:11:27.986 [error] #PID<0.16358.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.16326.0>, stream id 2) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/like
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Roadchat.Repos.Posts.get_post!/1 is undefined or private
+        (roadchat 0.1.0) Roadchat.Repos.Posts.get_post!(nil)
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:149: RoadchatWeb.API.V1.PostController.like_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+17:12:20.114 [error] #PID<0.16422.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.16391.0>, stream id 2) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/like
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Roadchat.Repos.Posts.get_post!/1 is undefined or private
+        (roadchat 0.1.0) Roadchat.Repos.Posts.get_post!("23")
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:149: RoadchatWeb.API.V1.PostController.like_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+17:13:22.543 [error] #PID<0.16484.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.16453.0>, stream id 2) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/like
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Roadchat.Repos.Posts.get_post!/1 is undefined or private
+        (roadchat 0.1.0) Roadchat.Repos.Posts.get_post!("23")
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:149: RoadchatWeb.API.V1.PostController.like_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+17:20:07.983 [error] #PID<0.16557.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.16525.0>, stream id 2) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/like
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Roadchat.Repos.Posts.get_post!/1 is undefined or private
+        (roadchat 0.1.0) Roadchat.Repos.Posts.get_post!("23")
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:149: RoadchatWeb.API.V1.PostController.like_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+17:30:34.806 [error] #PID<0.16670.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.16602.0>, stream id 2) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/like
+** (exit) an exception was raised:
+    ** (DBConnection.EncodeError) Postgrex expected an integer in -9223372036854775808..9223372036854775807, got "23". Please make sure the value you are passing matches the definition in your table or in your query or convert the value accordingly.
+        (roadchat 0.1.0) deps/postgrex/lib/postgrex/type_module.ex:947: Roadchat.PostgresTypes.encode_params/3
+        (postgrex 0.17.3) lib/postgrex/query.ex:75: DBConnection.Query.Postgrex.Query.encode/3
+        (db_connection 2.5.0) lib/db_connection.ex:1323: DBConnection.encode/5
+        (db_connection 2.5.0) lib/db_connection.ex:1423: DBConnection.run_prepare_execute/5
+        (db_connection 2.5.0) lib/db_connection.ex:1527: DBConnection.run/6
+        (db_connection 2.5.0) lib/db_connection.ex:656: DBConnection.parsed_prepare_execute/5
+        (db_connection 2.5.0) lib/db_connection.ex:709: DBConnection.execute/4
+        (ecto_sql 3.10.2) lib/ecto/adapters/postgres/connection.ex:102: Ecto.Adapters.Postgres.Connection.execute/4
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:989: Ecto.Adapters.SQL.execute!/5
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:149: RoadchatWeb.API.V1.PostController.like_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+17:31:56.556 [error] #PID<0.16731.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.16700.0>, stream id 2) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/like
+** (exit) an exception was raised:
+    ** (FunctionClauseError) no function clause matching in Roadchat.Schemas.Post.changeset/2
+        (roadchat 0.1.0) lib/roadchat/schemas/post.ex:43: Roadchat.Schemas.Post.changeset(%{post: "Hi there, happy new year", comment_count: 0, avatar: "https://firebasestorage.googleapis.com:443/v0/b/roadchatapp.appspot.com/o/profile%2Fimage.jpg?alt=media&token=fbdb929f-f29c-41d6-938c-ab595da07271", like_count: 0, post_id: 23, first_name: "sriram", last_name: "lots", post_img: "https://firebasestorage.googleapis.com:443/v0/b/roadchatapp.appspot.com/o/posts%2F3C3A4AE0-9CA1-46D8-8C3F-D20BF86CAA91.jpg?alt=media&token=ac457e8d-b732-410a-9ff5-b274df9e39b8", created_at: ~N[2024-01-01 17:53:18.000000]}, %{like_count: 1})
+        (roadchat 0.1.0) lib/roadchat/repos/posts.ex:46: Roadchat.Repos.Posts.update_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:156: RoadchatWeb.API.V1.PostController.like_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+17:33:21.782 [error] #PID<0.16763.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.16762.0>, stream id 1) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/unlike
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Ecto.Queryable not implemented for Post of type Atom, the given module does not exist. This protocol is implemented for the following type(s): Atom, BitString, Ecto.Query, Ecto.SubQuery, Tuple
+        (ecto 3.10.3) lib/ecto/queryable.ex:40: Ecto.Queryable.Atom.to_query/1
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:446: Ecto.Repo.Queryable.query_for_get/2
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:69: Ecto.Repo.Queryable.get/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:170: RoadchatWeb.API.V1.PostController.unlike_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+17:34:59.353 [error] #PID<0.16988.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.16901.0>, stream id 3) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/like
+** (exit) an exception was raised:
+    ** (FunctionClauseError) no function clause matching in Roadchat.Schemas.Post.blank_changeset/2
+        (roadchat 0.1.0) lib/roadchat/schemas/post.ex:32: Roadchat.Schemas.Post.blank_changeset(%{post: "Hi there, happy new year", comment_count: 0, avatar: "https://firebasestorage.googleapis.com:443/v0/b/roadchatapp.appspot.com/o/profile%2Fimage.jpg?alt=media&token=fbdb929f-f29c-41d6-938c-ab595da07271", like_count: 0, post_id: 23, first_name: "sriram", last_name: "lots", post_img: "https://firebasestorage.googleapis.com:443/v0/b/roadchatapp.appspot.com/o/posts%2F3C3A4AE0-9CA1-46D8-8C3F-D20BF86CAA91.jpg?alt=media&token=ac457e8d-b732-410a-9ff5-b274df9e39b8", created_at: ~N[2024-01-01 17:53:18.000000]}, %{like_count: 1})
+        (roadchat 0.1.0) lib/roadchat/repos/posts.ex:46: Roadchat.Repos.Posts.update_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:157: RoadchatWeb.API.V1.PostController.like_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+21:17:04.156 [error] #PID<0.17796.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.17699.0>, stream id 3) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/unlike
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Ecto.Queryable not implemented for Post of type Atom, the given module does not exist. This protocol is implemented for the following type(s): Atom, BitString, Ecto.Query, Ecto.SubQuery, Tuple
+        (ecto 3.10.3) lib/ecto/queryable.ex:40: Ecto.Queryable.Atom.to_query/1
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:446: Ecto.Repo.Queryable.query_for_get/2
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:69: Ecto.Repo.Queryable.get/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:172: RoadchatWeb.API.V1.PostController.unlike_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+21:27:37.536 [error] #PID<0.17902.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.17901.0>, stream id 1) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/unlike
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Ecto.Queryable not implemented for Post of type Atom, the given module does not exist. This protocol is implemented for the following type(s): Atom, BitString, Ecto.Query, Ecto.SubQuery, Tuple
+        (ecto 3.10.3) lib/ecto/queryable.ex:40: Ecto.Queryable.Atom.to_query/1
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:446: Ecto.Repo.Queryable.query_for_get/2
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:69: Ecto.Repo.Queryable.get/4
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:172: RoadchatWeb.API.V1.PostController.unlike_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+21:30:21.943 [error] #PID<0.18033.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.17935.0>, stream id 3) terminated
+Server: c457-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/unlike
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Roadchat.Repo.get_single_post/2 is undefined or private
+        (roadchat 0.1.0) Roadchat.Repo.get_single_post(Post, 23)
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:172: RoadchatWeb.API.V1.PostController.unlike_post/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/post_controller.ex:1: RoadchatWeb.API.V1.PostController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+12:43:51.403 [error] ** State machine #PID<0.441.0> terminating
+** Reason for termination ==
+** (DBConnection.ConnectionError) client #PID<0.601.0> stopped: ** (ArgumentError) errors were found at the given arguments:
+
+  * 1st argument: not an iodata term
+
+    :erlang.iolist_size(["", 0, #Ecto.Query<from p0 in "posts", join: u1 in "users", on: p0.user_id == u1.id, join: u2 in "user_likes", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{
+  post_id: p0.id,
+  first_name: u1.fname,
+  last_name: u1.lname,
+  post_img: p0.post_img,
+  avatar: u1.avatar,
+  post: p0.post,
+  created_at: p0.inserted_at,
+  comment_count: p0.comment_count,
+  like_count: p0.like_count,
+  user_liked_post: fragment("count(?)", u2)
+}>, 0, <<0, 0>>, ""])
+    (postgrex 0.17.3) lib/postgrex/messages.ex:262: Postgrex.Messages.encode_msg/1
+    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: anonymous fn/2 in Postgrex.Protocol.msg_send/3
+    (elixir 1.16.0) lib/enum.ex:2528: Enum."-reduce/3-lists^foldl/2-0-"/3
+    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: Postgrex.Protocol.msg_send/3
+    (postgrex 0.17.3) lib/postgrex/protocol.ex:1357: Postgrex.Protocol.parse_describe_flush/3
+    (db_connection 2.5.0) lib/db_connection/holder.ex:354: DBConnection.Holder.holder_apply/4
+    (db_connection 2.5.0) lib/db_connection.ex:1417: DBConnection.prepare/4
+    (db_connection 2.5.0) lib/db_connection.ex:1410: DBConnection.run_prepare/4
+    (db_connection 2.5.0) lib/db_connection.ex:1422: DBConnection.run_prepare_execute/5
+    (db_connection 2.5.0) lib/db_connection.ex:1527: DBConnection.run/6
+    (db_connection 2.5.0) lib/db_connection.ex:656: DBConnection.parsed_prepare_execute/5
+    (db_connection 2.5.0) lib/db_connection.ex:648: DBConnection.prepare_execute/4
+    (postgrex 0.17.3) lib/postgrex.ex:360: Postgrex.query_prepare_execute/4
+    (elixir 1.16.0) src/elixir.erl:405: :elixir.eval_external_handler/3
+    (stdlib 5.2) erl_eval.erl:750: :erl_eval.do_apply/7
+    (elixir 1.16.0) src/elixir.erl:378: :elixir.eval_forms/4
+    (elixir 1.16.0) lib/module/parallel_checker.ex:112: Module.ParallelChecker.verify/1
+    (iex 1.16.0) lib/iex/evaluator.ex:331: IEx.Evaluator.eval_and_inspect/3
+    (iex 1.16.0) lib/iex/evaluator.ex:305: IEx.Evaluator.eval_and_inspect_parsed/3
+
+
+12:43:51.418 [error] an exception was raised logging %DBConnection.LogEntry{call: :prepare_execute, query: %Postgrex.Query{ref: nil, name: "", statement: #Ecto.Query<from p0 in "posts", join: u1 in "users", on: p0.user_id == u1.id, join: u2 in "user_likes", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{
+  post_id: p0.id,
+  first_name: u1.fname,
+  last_name: u1.lname,
+  post_img: p0.post_img,
+  avatar: u1.avatar,
+  post: p0.post,
+  created_at: p0.inserted_at,
+  comment_count: p0.comment_count,
+  like_count: p0.like_count,
+  user_liked_post: fragment("count(?)", u2)
+}>, param_oids: nil, param_formats: nil, param_types: nil, columns: nil, result_oids: nil, result_formats: nil, result_types: nil, types: nil, cache: :reference}, params: [], result: {:error, %DBConnection.ConnectionError{message: "an exception was raised: ** (ArgumentError) errors were found at the given arguments:\n\n  * 1st argument: not an iodata term\n\n    :erlang.iolist_size([\"\", 0, #Ecto.Query<from p0 in \"posts\", join: u1 in \"users\", on: p0.user_id == u1.id, join: u2 in \"user_likes\", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{\n  post_id: p0.id,\n  first_name: u1.fname,\n  last_name: u1.lname,\n  post_img: p0.post_img,\n  avatar: u1.avatar,\n  post: p0.post,\n  created_at: p0.inserted_at,\n  comment_count: p0.comment_count,\n  like_count: p0.like_count,\n  user_liked_post: fragment(\"count(?)\", u2)\n}>, 0, <<0, 0>>, \"\"])\n    (postgrex 0.17.3) lib/postgrex/messages.ex:262: Postgrex.Messages.encode_msg/1\n    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: anonymous fn/2 in Postgrex.Protocol.msg_send/3\n    (elixir 1.16.0) lib/enum.ex:2528: Enum.\"-reduce/3-lists^foldl/2-0-\"/3\n    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: Postgrex.Protocol.msg_send/3\n    (postgrex 0.17.3) lib/postgrex/protocol.ex:1357: Postgrex.Protocol.parse_describe_flush/3\n    (db_connection 2.5.0) lib/db_connection/holder.ex:354: DBConnection.Holder.holder_apply/4\n    (db_connection 2.5.0) lib/db_connection.ex:1417: DBConnection.prepare/4\n    (db_connection 2.5.0) lib/db_connection.ex:1410: DBConnection.run_prepare/4\n    (db_connection 2.5.0) lib/db_connection.ex:1422: DBConnection.run_prepare_execute/5\n    (db_connection 2.5.0) lib/db_connection.ex:1527: DBConnection.run/6\n    (db_connection 2.5.0) lib/db_connection.ex:656: DBConnection.parsed_prepare_execute/5\n    (db_connection 2.5.0) lib/db_connection.ex:648: DBConnection.prepare_execute/4\n    (postgrex 0.17.3) lib/postgrex.ex:360: Postgrex.query_prepare_execute/4\n    (elixir 1.16.0) src/elixir.erl:405: :elixir.eval_external_handler/3\n    (stdlib 5.2) erl_eval.erl:750: :erl_eval.do_apply/7\n    (elixir 1.16.0) src/elixir.erl:378: :elixir.eval_forms/4\n    (elixir 1.16.0) lib/module/parallel_checker.ex:112: Module.ParallelChecker.verify/1\n    (iex 1.16.0) lib/iex/evaluator.ex:331: IEx.Evaluator.eval_and_inspect/3\n    (iex 1.16.0) lib/iex/evaluator.ex:305: IEx.Evaluator.eval_and_inspect_parsed/3\n", severity: :error, reason: :error}}, pool_time: 106582, connection_time: 17916227, decode_time: nil, idle_time: 1432115400}: ** (ArgumentError) errors were found at the given arguments:
+
+  * 1st argument: not an iodata term
+
+    :erlang.iolist_to_binary(#Ecto.Query<from p0 in "posts", join: u1 in "users", on: p0.user_id == u1.id, join: u2 in "user_likes", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{
+  post_id: p0.id,
+  first_name: u1.fname,
+  last_name: u1.lname,
+  post_img: p0.post_img,
+  avatar: u1.avatar,
+  post: p0.post,
+  created_at: p0.inserted_at,
+  comment_count: p0.comment_count,
+  like_count: p0.like_count,
+  user_liked_post: fragment("count(?)", u2)
+}>)
+    (postgrex 0.17.3) lib/postgrex/query.ex:117: String.Chars.Postgrex.Query.to_string/1
+    (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1200: Ecto.Adapters.SQL.log/4
+    (db_connection 2.5.0) lib/db_connection.ex:1578: DBConnection.log/5
+    (postgrex 0.17.3) lib/postgrex.ex:360: Postgrex.query_prepare_execute/4
+    (elixir 1.16.0) src/elixir.erl:405: :elixir.eval_external_handler/3
+    (stdlib 5.2) erl_eval.erl:750: :erl_eval.do_apply/7
+    (elixir 1.16.0) src/elixir.erl:378: :elixir.eval_forms/4
+    (elixir 1.16.0) lib/module/parallel_checker.ex:112: Module.ParallelChecker.verify/1
+    (iex 1.16.0) lib/iex/evaluator.ex:331: IEx.Evaluator.eval_and_inspect/3
+    (iex 1.16.0) lib/iex/evaluator.ex:305: IEx.Evaluator.eval_and_inspect_parsed/3
+    (iex 1.16.0) lib/iex/evaluator.ex:294: IEx.Evaluator.parse_eval_inspect/4
+    (iex 1.16.0) lib/iex/evaluator.ex:187: IEx.Evaluator.loop/1
+    (iex 1.16.0) lib/iex/evaluator.ex:32: IEx.Evaluator.init/5
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+
+12:46:04.885 [error] ** State machine #PID<0.631.0> terminating
+** Reason for termination ==
+** (DBConnection.ConnectionError) client #PID<0.601.0> stopped: ** (ArgumentError) errors were found at the given arguments:
+
+  * 1st argument: not an iodata term
+
+    :erlang.iolist_size(["", 0, #Ecto.Query<from p0 in "posts", join: u1 in "users", on: p0.user_id == u1.id, join: u2 in "user_likes", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{
+  post_id: p0.id,
+  first_name: u1.fname,
+  last_name: u1.lname,
+  post_img: p0.post_img,
+  avatar: u1.avatar,
+  post: p0.post,
+  created_at: p0.inserted_at,
+  comment_count: p0.comment_count,
+  like_count: p0.like_count,
+  user_liked_post: fragment("count(?)", u2.post_id)
+}>, 0, <<0, 0>>, ""])
+    (postgrex 0.17.3) lib/postgrex/messages.ex:262: Postgrex.Messages.encode_msg/1
+    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: anonymous fn/2 in Postgrex.Protocol.msg_send/3
+    (elixir 1.16.0) lib/enum.ex:2528: Enum."-reduce/3-lists^foldl/2-0-"/3
+    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: Postgrex.Protocol.msg_send/3
+    (postgrex 0.17.3) lib/postgrex/protocol.ex:1357: Postgrex.Protocol.parse_describe_flush/3
+    (db_connection 2.5.0) lib/db_connection/holder.ex:354: DBConnection.Holder.holder_apply/4
+    (db_connection 2.5.0) lib/db_connection.ex:1417: DBConnection.prepare/4
+    (db_connection 2.5.0) lib/db_connection.ex:1410: DBConnection.run_prepare/4
+    (db_connection 2.5.0) lib/db_connection.ex:1422: DBConnection.run_prepare_execute/5
+    (db_connection 2.5.0) lib/db_connection.ex:1527: DBConnection.run/6
+    (db_connection 2.5.0) lib/db_connection.ex:656: DBConnection.parsed_prepare_execute/5
+    (db_connection 2.5.0) lib/db_connection.ex:648: DBConnection.prepare_execute/4
+    (postgrex 0.17.3) lib/postgrex.ex:360: Postgrex.query_prepare_execute/4
+    (elixir 1.16.0) src/elixir.erl:405: :elixir.eval_external_handler/3
+    (stdlib 5.2) erl_eval.erl:750: :erl_eval.do_apply/7
+    (elixir 1.16.0) src/elixir.erl:378: :elixir.eval_forms/4
+    (elixir 1.16.0) lib/module/parallel_checker.ex:112: Module.ParallelChecker.verify/1
+    (iex 1.16.0) lib/iex/evaluator.ex:331: IEx.Evaluator.eval_and_inspect/3
+    (iex 1.16.0) lib/iex/evaluator.ex:305: IEx.Evaluator.eval_and_inspect_parsed/3
+
+
+12:46:04.890 [error] an exception was raised logging %DBConnection.LogEntry{call: :prepare_execute, query: %Postgrex.Query{ref: nil, name: "", statement: #Ecto.Query<from p0 in "posts", join: u1 in "users", on: p0.user_id == u1.id, join: u2 in "user_likes", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{
+  post_id: p0.id,
+  first_name: u1.fname,
+  last_name: u1.lname,
+  post_img: p0.post_img,
+  avatar: u1.avatar,
+  post: p0.post,
+  created_at: p0.inserted_at,
+  comment_count: p0.comment_count,
+  like_count: p0.like_count,
+  user_liked_post: fragment("count(?)", u2.post_id)
+}>, param_oids: nil, param_formats: nil, param_types: nil, columns: nil, result_oids: nil, result_formats: nil, result_types: nil, types: nil, cache: :reference}, params: [], result: {:error, %DBConnection.ConnectionError{message: "an exception was raised: ** (ArgumentError) errors were found at the given arguments:\n\n  * 1st argument: not an iodata term\n\n    :erlang.iolist_size([\"\", 0, #Ecto.Query<from p0 in \"posts\", join: u1 in \"users\", on: p0.user_id == u1.id, join: u2 in \"user_likes\", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{\n  post_id: p0.id,\n  first_name: u1.fname,\n  last_name: u1.lname,\n  post_img: p0.post_img,\n  avatar: u1.avatar,\n  post: p0.post,\n  created_at: p0.inserted_at,\n  comment_count: p0.comment_count,\n  like_count: p0.like_count,\n  user_liked_post: fragment(\"count(?)\", u2.post_id)\n}>, 0, <<0, 0>>, \"\"])\n    (postgrex 0.17.3) lib/postgrex/messages.ex:262: Postgrex.Messages.encode_msg/1\n    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: anonymous fn/2 in Postgrex.Protocol.msg_send/3\n    (elixir 1.16.0) lib/enum.ex:2528: Enum.\"-reduce/3-lists^foldl/2-0-\"/3\n    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: Postgrex.Protocol.msg_send/3\n    (postgrex 0.17.3) lib/postgrex/protocol.ex:1357: Postgrex.Protocol.parse_describe_flush/3\n    (db_connection 2.5.0) lib/db_connection/holder.ex:354: DBConnection.Holder.holder_apply/4\n    (db_connection 2.5.0) lib/db_connection.ex:1417: DBConnection.prepare/4\n    (db_connection 2.5.0) lib/db_connection.ex:1410: DBConnection.run_prepare/4\n    (db_connection 2.5.0) lib/db_connection.ex:1422: DBConnection.run_prepare_execute/5\n    (db_connection 2.5.0) lib/db_connection.ex:1527: DBConnection.run/6\n    (db_connection 2.5.0) lib/db_connection.ex:656: DBConnection.parsed_prepare_execute/5\n    (db_connection 2.5.0) lib/db_connection.ex:648: DBConnection.prepare_execute/4\n    (postgrex 0.17.3) lib/postgrex.ex:360: Postgrex.query_prepare_execute/4\n    (elixir 1.16.0) src/elixir.erl:405: :elixir.eval_external_handler/3\n    (stdlib 5.2) erl_eval.erl:750: :erl_eval.do_apply/7\n    (elixir 1.16.0) src/elixir.erl:378: :elixir.eval_forms/4\n    (elixir 1.16.0) lib/module/parallel_checker.ex:112: Module.ParallelChecker.verify/1\n    (iex 1.16.0) lib/iex/evaluator.ex:331: IEx.Evaluator.eval_and_inspect/3\n    (iex 1.16.0) lib/iex/evaluator.ex:305: IEx.Evaluator.eval_and_inspect_parsed/3\n", severity: :error, reason: :error}}, pool_time: 128416, connection_time: 7551253, decode_time: nil, idle_time: 1921720482}: ** (ArgumentError) errors were found at the given arguments:
+
+  * 1st argument: not an iodata term
+
+    :erlang.iolist_to_binary(#Ecto.Query<from p0 in "posts", join: u1 in "users", on: p0.user_id == u1.id, join: u2 in "user_likes", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{
+  post_id: p0.id,
+  first_name: u1.fname,
+  last_name: u1.lname,
+  post_img: p0.post_img,
+  avatar: u1.avatar,
+  post: p0.post,
+  created_at: p0.inserted_at,
+  comment_count: p0.comment_count,
+  like_count: p0.like_count,
+  user_liked_post: fragment("count(?)", u2.post_id)
+}>)
+    (postgrex 0.17.3) lib/postgrex/query.ex:117: String.Chars.Postgrex.Query.to_string/1
+    (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1200: Ecto.Adapters.SQL.log/4
+    (db_connection 2.5.0) lib/db_connection.ex:1578: DBConnection.log/5
+    (postgrex 0.17.3) lib/postgrex.ex:360: Postgrex.query_prepare_execute/4
+    (elixir 1.16.0) src/elixir.erl:405: :elixir.eval_external_handler/3
+    (stdlib 5.2) erl_eval.erl:750: :erl_eval.do_apply/7
+    (elixir 1.16.0) src/elixir.erl:378: :elixir.eval_forms/4
+    (elixir 1.16.0) lib/module/parallel_checker.ex:112: Module.ParallelChecker.verify/1
+    (iex 1.16.0) lib/iex/evaluator.ex:331: IEx.Evaluator.eval_and_inspect/3
+    (iex 1.16.0) lib/iex/evaluator.ex:305: IEx.Evaluator.eval_and_inspect_parsed/3
+    (iex 1.16.0) lib/iex/evaluator.ex:294: IEx.Evaluator.parse_eval_inspect/4
+    (iex 1.16.0) lib/iex/evaluator.ex:187: IEx.Evaluator.loop/1
+    (iex 1.16.0) lib/iex/evaluator.ex:32: IEx.Evaluator.init/5
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+
+12:55:49.149 [error] ** State machine #PID<0.442.0> terminating
+** Reason for termination ==
+** (DBConnection.ConnectionError) client #PID<0.601.0> stopped: ** (ArgumentError) errors were found at the given arguments:
+
+  * 1st argument: not an iodata term
+
+    :erlang.iolist_size(["", 0, #Ecto.Query<from p0 in "posts", join: u1 in "users", on: p0.user_id == u1.id, join: u2 in "user_likes", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{
+  post_id: p0.id,
+  first_name: u1.fname,
+  last_name: u1.lname,
+  post_img: p0.post_img,
+  avatar: u1.avatar,
+  post: p0.post,
+  created_at: p0.inserted_at,
+  comment_count: p0.comment_count,
+  like_count: p0.like_count
+}>, 0, <<0, 0>>, ""])
+    (postgrex 0.17.3) lib/postgrex/messages.ex:262: Postgrex.Messages.encode_msg/1
+    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: anonymous fn/2 in Postgrex.Protocol.msg_send/3
+    (elixir 1.16.0) lib/enum.ex:2528: Enum."-reduce/3-lists^foldl/2-0-"/3
+    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: Postgrex.Protocol.msg_send/3
+    (postgrex 0.17.3) lib/postgrex/protocol.ex:1357: Postgrex.Protocol.parse_describe_flush/3
+    (db_connection 2.5.0) lib/db_connection/holder.ex:354: DBConnection.Holder.holder_apply/4
+    (db_connection 2.5.0) lib/db_connection.ex:1417: DBConnection.prepare/4
+    (db_connection 2.5.0) lib/db_connection.ex:1410: DBConnection.run_prepare/4
+    (db_connection 2.5.0) lib/db_connection.ex:1422: DBConnection.run_prepare_execute/5
+    (db_connection 2.5.0) lib/db_connection.ex:1527: DBConnection.run/6
+    (db_connection 2.5.0) lib/db_connection.ex:656: DBConnection.parsed_prepare_execute/5
+    (db_connection 2.5.0) lib/db_connection.ex:648: DBConnection.prepare_execute/4
+    (postgrex 0.17.3) lib/postgrex.ex:360: Postgrex.query_prepare_execute/4
+    (elixir 1.16.0) src/elixir.erl:405: :elixir.eval_external_handler/3
+    (stdlib 5.2) erl_eval.erl:750: :erl_eval.do_apply/7
+    (elixir 1.16.0) src/elixir.erl:378: :elixir.eval_forms/4
+    (elixir 1.16.0) lib/module/parallel_checker.ex:112: Module.ParallelChecker.verify/1
+    (iex 1.16.0) lib/iex/evaluator.ex:331: IEx.Evaluator.eval_and_inspect/3
+    (iex 1.16.0) lib/iex/evaluator.ex:305: IEx.Evaluator.eval_and_inspect_parsed/3
+
+
+12:55:49.155 [error] an exception was raised logging %DBConnection.LogEntry{call: :prepare_execute, query: %Postgrex.Query{ref: nil, name: "", statement: #Ecto.Query<from p0 in "posts", join: u1 in "users", on: p0.user_id == u1.id, join: u2 in "user_likes", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{
+  post_id: p0.id,
+  first_name: u1.fname,
+  last_name: u1.lname,
+  post_img: p0.post_img,
+  avatar: u1.avatar,
+  post: p0.post,
+  created_at: p0.inserted_at,
+  comment_count: p0.comment_count,
+  like_count: p0.like_count
+}>, param_oids: nil, param_formats: nil, param_types: nil, columns: nil, result_oids: nil, result_formats: nil, result_types: nil, types: nil, cache: :reference}, params: [], result: {:error, %DBConnection.ConnectionError{message: "an exception was raised: ** (ArgumentError) errors were found at the given arguments:\n\n  * 1st argument: not an iodata term\n\n    :erlang.iolist_size([\"\", 0, #Ecto.Query<from p0 in \"posts\", join: u1 in \"users\", on: p0.user_id == u1.id, join: u2 in \"user_likes\", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{\n  post_id: p0.id,\n  first_name: u1.fname,\n  last_name: u1.lname,\n  post_img: p0.post_img,\n  avatar: u1.avatar,\n  post: p0.post,\n  created_at: p0.inserted_at,\n  comment_count: p0.comment_count,\n  like_count: p0.like_count\n}>, 0, <<0, 0>>, \"\"])\n    (postgrex 0.17.3) lib/postgrex/messages.ex:262: Postgrex.Messages.encode_msg/1\n    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: anonymous fn/2 in Postgrex.Protocol.msg_send/3\n    (elixir 1.16.0) lib/enum.ex:2528: Enum.\"-reduce/3-lists^foldl/2-0-\"/3\n    (postgrex 0.17.3) lib/postgrex/protocol.ex:3263: Postgrex.Protocol.msg_send/3\n    (postgrex 0.17.3) lib/postgrex/protocol.ex:1357: Postgrex.Protocol.parse_describe_flush/3\n    (db_connection 2.5.0) lib/db_connection/holder.ex:354: DBConnection.Holder.holder_apply/4\n    (db_connection 2.5.0) lib/db_connection.ex:1417: DBConnection.prepare/4\n    (db_connection 2.5.0) lib/db_connection.ex:1410: DBConnection.run_prepare/4\n    (db_connection 2.5.0) lib/db_connection.ex:1422: DBConnection.run_prepare_execute/5\n    (db_connection 2.5.0) lib/db_connection.ex:1527: DBConnection.run/6\n    (db_connection 2.5.0) lib/db_connection.ex:656: DBConnection.parsed_prepare_execute/5\n    (db_connection 2.5.0) lib/db_connection.ex:648: DBConnection.prepare_execute/4\n    (postgrex 0.17.3) lib/postgrex.ex:360: Postgrex.query_prepare_execute/4\n    (elixir 1.16.0) src/elixir.erl:405: :elixir.eval_external_handler/3\n    (stdlib 5.2) erl_eval.erl:750: :erl_eval.do_apply/7\n    (elixir 1.16.0) src/elixir.erl:378: :elixir.eval_forms/4\n    (elixir 1.16.0) lib/module/parallel_checker.ex:112: Module.ParallelChecker.verify/1\n    (iex 1.16.0) lib/iex/evaluator.ex:331: IEx.Evaluator.eval_and_inspect/3\n    (iex 1.16.0) lib/iex/evaluator.ex:305: IEx.Evaluator.eval_and_inspect_parsed/3\n", severity: :error, reason: :error}}, pool_time: 401788, connection_time: 5202153, decode_time: nil, idle_time: 1151115276}: ** (ArgumentError) errors were found at the given arguments:
+
+  * 1st argument: not an iodata term
+
+    :erlang.iolist_to_binary(#Ecto.Query<from p0 in "posts", join: u1 in "users", on: p0.user_id == u1.id, join: u2 in "user_likes", on: p0.id == u2.post_id and p0.user_id == u2.user_id, order_by: [desc: p0.inserted_at, desc: p0.id], select: %{
+  post_id: p0.id,
+  first_name: u1.fname,
+  last_name: u1.lname,
+  post_img: p0.post_img,
+  avatar: u1.avatar,
+  post: p0.post,
+  created_at: p0.inserted_at,
+  comment_count: p0.comment_count,
+  like_count: p0.like_count
+}>)
+    (postgrex 0.17.3) lib/postgrex/query.ex:117: String.Chars.Postgrex.Query.to_string/1
+    (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1200: Ecto.Adapters.SQL.log/4
+    (db_connection 2.5.0) lib/db_connection.ex:1578: DBConnection.log/5
+    (postgrex 0.17.3) lib/postgrex.ex:360: Postgrex.query_prepare_execute/4
+    (elixir 1.16.0) src/elixir.erl:405: :elixir.eval_external_handler/3
+    (stdlib 5.2) erl_eval.erl:750: :erl_eval.do_apply/7
+    (elixir 1.16.0) src/elixir.erl:378: :elixir.eval_forms/4
+    (elixir 1.16.0) lib/module/parallel_checker.ex:112: Module.ParallelChecker.verify/1
+    (iex 1.16.0) lib/iex/evaluator.ex:331: IEx.Evaluator.eval_and_inspect/3
+    (iex 1.16.0) lib/iex/evaluator.ex:305: IEx.Evaluator.eval_and_inspect_parsed/3
+    (iex 1.16.0) lib/iex/evaluator.ex:294: IEx.Evaluator.parse_eval_inspect/4
+    (iex 1.16.0) lib/iex/evaluator.ex:187: IEx.Evaluator.loop/1
+    (iex 1.16.0) lib/iex/evaluator.ex:32: IEx.Evaluator.init/5
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+

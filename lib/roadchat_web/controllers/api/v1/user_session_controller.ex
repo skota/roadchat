@@ -28,25 +28,22 @@ defmodule RoadchatWeb.Api.V1.UserSessionController do
 
         # settings = Settings.get_settings()
         settings = []
-        customer_cards = CustomerCards.list_cards(user.id)
+        # customer_cards = CustomerCards.list_cards(user.id)
         # get customer car
-        payment_method_id =
-          if Enum.empty?(customer_cards) do
-            nil
-          else
-            card = Enum.at(customer_cards, 0)
-            card.payment_method_id
-          end
+        # payment_method_id =
+        #   if Enum.empty?(customer_cards) do
+        #     nil
+        #   else
+        #     card = Enum.at(customer_cards, 0)
+        #     card.payment_method_id
+        #   end
 
         {:ok, jwt, _full_claims} = Guardian.encode_and_sign(user, %{})
 
         json(conn, %{
-          id: user.id,
+          user: user,
           jwt: jwt,
-          stripe_cust_id: user.stripe_cust_id,
           settings: settings,
-          minutes: user.minutes,
-          payment_method_id: payment_method_id
         })
     end
   end

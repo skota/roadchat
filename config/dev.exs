@@ -1,5 +1,11 @@
 import Config
 
+# add geo types
+# Postgrex.Types.define(Roadchat.PostgresTypes,
+#               [Geo.PostGIS.Extension] ++ Ecto.Adapters.Postgres.extensions(),
+#               json: Jason)
+
+
 # Configure your database
 config :roadchat, Roadchat.Repo,
   username: "sriramkota",
@@ -8,7 +14,11 @@ config :roadchat, Roadchat.Repo,
   database: "roadchat_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+  pool_size: 10,
+  types: Roadchat.PostgresTypes
+
+  # if the above "types' line is missing, post gis wont work
+
 
 # For development, we disable any cache and enable
 # debugging and code reloading.

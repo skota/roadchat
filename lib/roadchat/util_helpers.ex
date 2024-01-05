@@ -66,13 +66,25 @@ defmodule Roadchat.UtilHelpers do
 
   # ecto helpers
   def return_errors(%Ecto.Changeset{} = cs) do
-    errors = changeset_error_to_string(cs)
+    # errors = changeset_error_to_string(cs)
+
+    errors = Ecto.Changeset.traverse_errors(cs, fn {msg, opts} -> \
+      Regex.replace(~r"%{(\w+)}", msg, fn _, key -> \
+        opts |> Keyword.get(String.to_existing_atom(key), key) |> to_string() \
+      end) \
+    end)
+    |> Enum.reduce("", fn {k, v}, acc ->
+      joined_errors = Enum.join(v, "; ")
+      "#{acc}#{k}: #{joined_errors}"
+    end)
+
     {:error, errors}
   end
 
   def changeset_error_to_string(changeset) do
-    Ecto.Changeset.traverse_errors(changeset, fn {msg, opts} ->
+    Ecto.Changeset.traverse_errors(changeset.errors, fn {msg, opts} ->
       Enum.reduce(opts, msg, fn {key, value}, acc ->
+        IO.inspect "This is the key: #{key} value #{value}"
         String.replace(acc, "%{#{key}}", to_string(value))
       end)
     end)

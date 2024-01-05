@@ -1,5 +1,5 @@
 defmodule Roadchat.Guardian do
-  use Guardian, otp_app: :yardygram
+  use Guardian, otp_app: :roadchat
 
   alias Roadchat.Accounts
 

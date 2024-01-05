@@ -34,12 +34,6 @@ defmodule Roadchat.Schemas.Post do
     |> cast(attrs, @cast_fields)
   end
 
-  # def update_changeset(%Patient{} = patient, attrs) do
-  #   patient
-  #   |> cast(attrs, @cast_fields)
-  #   # |> validate_required(@update_fields)
-  # end
-
   def changeset(%Post{} = post, attrs) do
     post
     |> cast(attrs, @cast_fields)

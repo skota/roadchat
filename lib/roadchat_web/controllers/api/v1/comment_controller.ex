@@ -7,22 +7,17 @@ defmodule RoadchatWeb.API.V1.CommentController do
 
   def index(conn, %{"id" => id}) do
     comments = Comment.get_comments_by_postid(id)
-    # render(conn, "index.json", comments: comments)
-    # get comments for given post if
     conn = conn |> put_status(200)
-    json(conn, %{comments: comments})
-    # json(conn, contacts)
+    json(conn, comments)
   end
 
   # create comment
-   # create post
   def create(conn, %{"comment" => params}) do
-
     case Comment.create_comment(params) do
       {:ok, comment} ->
         conn
         |> put_status(201)
-        |> json(%{message: "created post #{comment.id}"})
+        |> json(%{message: "created comment #{comment.id}"})
 
       {:error, changeset} ->
         IO.puts inspect changeset

@@ -1,0 +1,116 @@
+
+
+ HTTPoison.get! "https://postman-echo.com/get"   
+
+ http://www.google.com/search?q=
+ HTTPoison.get! "http://www.google.com/search?q=+rfp+web&as_qdr=m&as_filetype=pdf"
+
+ https://www.linkedin.com/search/results/content/?keywords=web+rfp
+ https://www.google.com/search?q=+best+web+job+boards
+
+ https://www.google.com/search?q=site:*.workable.com+Remote+web&as_qdr=m
+
+
+ Ecto.Changeset.traverse_errors(changeset, fn {msg, opts} -> \
+  Regex.replace(~r"%{(\w+)}", msg, fn _, key -> \
+    opts |> Keyword.get(String.to_existing_atom(key), key) |> to_string() \
+  end) \
+end)
+
+local user accounts
+-  sriram.kota@gmail.com / Secret123
+
+-- Stripe stuff -------------------
+https://www.stibbard.io/elixir-phoenix-stripe-checkout
+https://gist.github.com/nicolasblanco/0b954cbcdbc98d98fa3d93522241bb83
+
+https://staknine.com/stripe-checkout-for-elixir-phoenix/#build-your-checkout
+
+show form to collect card details - send to stripe 
+https://stripe.com/docs/payments/accept-a-payment-deferred
+
+
+1 - like - insert into user_likes (user_id, post_id)
+2 - unlike - delete from user_likes
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------- TODO
+
+add missing endpoint api/v1/post/id  ( get post)
+
+volunteer oppo
+
+https://www.catchafire.org/volunteer/123106/south-asian-american-digital-archive--saada---flexible-tech-support/
+
+https://www.catchafire.org/volunteer/122742/goodfellas-impact-coalition---board-prospecting/
+
+https://www.catchafire.org/volunteer/122967/archmere-academy--tech-systems/
+
+https://www.catchafire.org/volunteer/123147/uplift-solutions--website/
+
+https://www.catchafire.org/volunteer/123255/sprouting-farms--website/   1 hr call
+https://www.catchafire.org/volunteer/123232/kirkwood-children-s-chorale-dba-crescendo-youth-choirs--website/
+  - 1 hr call
+
+  https://www.catchafire.org/volunteer/123088/coosa-river-basin-initiative-upper-coosa-riverkeeper--website-audit/
+
+https://www.catchafire.org/volunteer/123278/sil-columbia--online-survey/
+for sasha?
+https://www.catchafire.org/volunteer/122578/literacy-inc---video-editing/
+
+https://www.catchafire.org/volunteer/123231/unintentional-purpose-inc--website-minor-update/
+  wordpress
+
+https://www.catchafire.org/volunteer/122970/ocean-blue-project--inc--flexible-web-development-support/
+  help with mobile app
+
+https://www.catchafire.org/volunteer/123189/kijiji-afrika--data-collection-plan/
+  - asking for help with data analysis in excel...
+
+https://www.catchafire.org/volunteer/123168/cambio-labs--website-major-update/
+  - wdpress?
+
+https://www.catchafire.org/volunteer/123105/a-better-road-foundation-inc--website-major-update/
+  - what exactly do they need help with?
+
+https://www.catchafire.org/volunteer/123096/indonesian-community-connect--data-collection-plan/
+  - data collection with excel
+https://www.catchafire.org/volunteer/123097/indonesian-community-connect--customer-database--crm--set-up/
+  - crm with wix?
+
+https://www.catchafire.org/volunteer/122987/riverdale-ymwha--customer-database--crm--set-up/
+  - another crm project - looks like users just pick requirements.most ofthem look same
+  - better impact seems expensive?
+
+https://www.catchafire.org/volunteer/121028/new-york-city-outward-bound--flexible-tech-support/
+  - need help with integrating  monday.com with google suite, what exactly are they using it for?
+
+https://www.catchafire.org/volunteer/122802/beyond-plastic--tech-systems/
+  - need help with systems sec audit
+
+https://www.catchafire.org/volunteer/122758/inncuvate-community-development-partners---inc---flexible-web-development-support/
+  - notion page design
+
+https://www.catchafire.org/volunteer/122678/c-a-r-e--clinic--website-major-update/
+  - migrate from wix to wordpress...will there be a paid option?
+
+https://www.catchafire.org/volunteer/122672/healing-schools-project--customer-database--crm--audit/
+  - have a basic system setup with airtable...want to improve it    
+
+https://www.catchafire.org/volunteer/120751/american-gateways--tech-systems/
+  - help with expense management syste
+
+https://www.catchafire.org/volunteer/121604/open-doors-outdoors--inc---flexible-web-development-support/
+  - help with website  
+

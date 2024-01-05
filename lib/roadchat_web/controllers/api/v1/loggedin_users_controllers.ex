@@ -5,6 +5,13 @@ defmodule RoadchatWeb.API.V1.LoggedinUsersController do
   alias Roadchat.Repos.LoggedinUsers
 
   def is_token_valid(conn, _params) do
+
+    # call guardian jwt verify
+    # %{"typ" => "access"}
+
+    # case Roadchat.Guardian.decode_and_verify()
+
+
     conn
     |> put_status(200)
     |> json(%{ok: "use is logged in. Token valid"})

@@ -25,12 +25,17 @@ defmodule Roadchat.Repos.Comment do
 
     post_id = String.to_integer(id)
 
+    # join with user tbl to get avatar
+
     query = from c in "comments",
+            join: u in "users", on: c.user_id == u.id,
             where: c.post_id == ^post_id,
             select: %{
               id: c.id,
               post_id: c.post_id,
               user_id: c.user_id,
+              first_name: u.fname,
+              last_name: u.lname,
               comment: c.comment,
               inserted_at: c.inserted_at,
               avatar: c.avatar

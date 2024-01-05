@@ -5,7 +5,6 @@ defmodule Roadchat.Repo do
 
     use Paginator
 
-
     def execute_and_load(sql, params, model) do
       Ecto.Adapters.SQL.query!(__MODULE__, sql, params)
       |> load_into(model)

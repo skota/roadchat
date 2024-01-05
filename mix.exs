@@ -60,6 +60,10 @@ defmodule Roadchat.MixProject do
       {:timex, "~> 3.7"},
       {:ex_cldr, "~> 2.37"},
       {:ex_cldr_numbers, "~> 2.0"},
+      {:httpoison, "~> 2.1"},
+      {:ex_aws, "~> 2.5"},
+      {:ex_aws_s3, "~> 2.5"}
+
     ]
   end
 
