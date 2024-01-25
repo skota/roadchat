@@ -2,11 +2,10 @@ defmodule Roadchat.Accounts do
   @moduledoc """
   The Accounts context.
   """
-
   import Ecto.Query, warn: false
   alias Roadchat.Repo
-
   alias Roadchat.Accounts.{User, UserToken, UserNotifier}
+  alias Roadchat.Schemas.{UserContact, RecentChat}
 
   ## Database getters
 
@@ -350,4 +349,60 @@ defmodule Roadchat.Accounts do
       {:error, :user, changeset, _} -> {:error, changeset}
     end
   end
+
+  def add_user_contacts_multi(attrs) do
+    # %UserContact{}
+    # |> UserContact.changeset(attrs)
+    Repo.insert_all(UserContact, attrs)
+  end
+
+  def add_user_contacts(attrs) do
+    %UserContact{}
+    |> UserContact.changeset(attrs)
+    |> Repo.insert()
+  end
+
+  # search users
+  def search_users(search_term) do
+    search_term = search_term <> "%"
+
+    q = from u in User,
+        where: ilike(u.email, ^search_term) or ilike(u.fname, ^search_term) or ilike(u.lname, ^search_term) ,
+        select: %{
+          id: u.id,
+          name: u.fname,
+          email: u.email,
+          avatar: u.avatar
+        }
+
+     Repo.all(q)
+  end
+
+  # insert into recent_chats
+  def insert_recent_chat(attrs) do
+    %RecentChat{}
+    |> RecentChat.changeset(attrs)
+    |> Repo.insert()
+  end
+
+  def insert_recent_chats_multi(attrs) do
+    # %RecentChat{}
+    # |> RecentChat.changeset(attrs)
+    # |> Repo.insert()
+    Repo.insert_all(RecentChat, attrs)
+  end
+
+  # update user device token
+  def update_device_token(params) do
+    {id, ""} = Integer.parse(params["user_id"])
+    user = get_user!(id)
+
+    IO.inspect user
+
+    user
+    |> User.device_token_changeset(%{"device_token" => params["device_token"]})
+    |> Repo.update()
+  end
+
+
 end

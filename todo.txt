@@ -30,25 +30,15 @@ show form to collect card details - send to stripe
 https://stripe.com/docs/payments/accept-a-payment-deferred
 
 
-1 - like - insert into user_likes (user_id, post_id)
-2 - unlike - delete from user_likes
+TODO:
+  BE
+    endpoint- /api/v1/getcontacts
 
-
-
-
-
-
-
-
-
-
+https://tech.julienkarst.com/How-to-display-time-ago-from-a-date-in-Swift-(This-is-how-to-get-the-difference-between-two-dates-in-a-string)
 
 
 
 ---------- TODO
-
-add missing endpoint api/v1/post/id  ( get post)
-
 volunteer oppo
 
 https://www.catchafire.org/volunteer/123106/south-asian-american-digital-archive--saada---flexible-tech-support/
@@ -113,4 +103,110 @@ https://www.catchafire.org/volunteer/120751/american-gateways--tech-systems/
 
 https://www.catchafire.org/volunteer/121604/open-doors-outdoors--inc---flexible-web-development-support/
   - help with website  
+
+--------
+
+Test data
+    {:ok, dt1} =  NaiveDateTime.new(~D[2024-01-09], ~T[23:00:07.005])
+    {:ok, dt2} =  NaiveDateTime.new(~D[2024-01-08], ~T[23:00:07.005])
+
+    chat1 = %{"user_id" => 18, "chat_with_user_id" => 20, "last_message" => "buy milk", "last_message_datetime" => dt1}
+    chat2 = %{"user_id" => 18, "chat_with_user_id" => 21, "last_message" => "Is your class done?", "last_message_datetime" => dt2}
+    Chats.add_recent_chat(chat1)
+    Chats.add_recent_chat(chat2)
+
+
+
+--- devicecheck
+keyId: 9PSF273TD9
+
+-- roadchatapns
+keyId: Q434UZ2BV3
+
+
+===== ###### ################
+Debug token do not delete
+C7181D9E-4EB7-4F01-848E-9365494E34E4
+
+
+{:ok, dt1 } = NaiveDateTime.from_iso8601("2024-01-13 00:00:00")
+{:ok, dt2 } = NaiveDateTime.from_iso8601("2024-01-13 00:00:00")
+
+dt1 = ~U[2024-01-14 00:52:36.273229Z]
+dt2 = ~U[2024-01-14 00:52:41.248541Z]
+
+contact1 = %{contact_with_user_id: 99, user_id: "66"}
+contact2 = %{contact_with_user_id: 66, user_id: "99"}
+
+=======
+
+dt1 = NaiveDateTime.local_now()
+dt2 = NaiveDateTime.local_now()
+dtt = DateTime.utc_now()
+dtc = DateTime.truncate(dtt, :second)
+
+chats = [%{last_message: "start chat now", user_id: 100, chat_with_user_id: 101, last_message_datetime: dt1, inserted_at: dtc, updated_at: dtc},
+          %{last_message: "start chat now", user_id: 101, chat_with_user_id: 100, last_message_datetime: dt2, inserted_at: dtc, updated_at: dtc}]
+
+TODO ---------------------------------------
+
+  APP 
+    - Add push notifications entitlement
+    - review firebase setup for push notifications
+    - Splash screen
+
+  BE  
+
+    - is sendgrid configured for roadchat
+    - password reset 
+
+    - update geo and of distance is less than mile, send push notification,
+      look at old repo?
+
+    - delete traille server
+
+    - reinstall it on soundscibe later
+    - change dns to point roadchat to soundscribe
+      - update soundscribe (linux )server packages
+      - create database for roadchat
+      - create Nginx virutal site for app.roadchat.com
+      - add lets encrypt cert for *.roadchat.com
+      - copy env vars
+      - build and deploy roadchat archive to server
+      - run migrations
+      - Test
+  
+  App store    
+    - put on test flight and test locally
+    - then send to ravi
+    - submit app for review
+
+  - practise nextjs
+
+----
+
+  GEO - 
+    home - (lat) 41.190310, (lon) -73.217830
+    2145 north ave-  (lat) 41.180000, (lon) -73.212440 
+
+  APP: figure out a way to geo points as floats instead of string
+
+  - I now have a genserver that holds userid and user contacts
+  - now complete the genserver to load user chat contacts (every 2 hrs)
+  - and the genserver tha checks if user contacts are in proximity (every 5 mins)
+    = calc distance
+    = send push notifications
+
+  String.to_float("-12.35456000")
+
+  Back to genservers
+    - figure out how to send push notification 
+
+
+
+
+  
+
+
+
 

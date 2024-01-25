@@ -6,6 +6,9 @@ defmodule RoadchatWeb.Api.V1.UserRegistrationController do
   require Logger
 
   def create(conn, %{"user" => user_params}) do
+    # add default avatar to new user
+    user_params = Map.put(user_params, "avatar", "https://via.placeholder.com/300x100.jpg")
+
     case Accounts.register_user(user_params) do
       {:ok, user} ->
         IO.inspect("created user")

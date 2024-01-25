@@ -18,7 +18,11 @@ defmodule Roadchat.Application do
       {Finch, name: Roadchat.Finch},
       # Start the Endpoint (http/https)
       RoadchatWeb.Endpoint,
-      Roadchat.StateBucket,
+      # Roadchat.StateBucket,
+      {Roadchat.Servers.UserStateServer, %{}},
+      {Roadchat.Servers.UserContactStateServer, %{}},
+      {Roadchat.Servers.LoadContacts, %{}},
+      # {Roadchat.Servers.ClearUserLocations, %{}},
       # Start a worker by calling: Roadchat.Worker.start_link(arg)
       # {Roadchat.Worker, arg}
     ]

@@ -29,6 +29,11 @@ defmodule RoadchatWeb.UserAuth do
     token = Accounts.generate_user_session_token(user)
     user_return_to = get_session(conn, :user_return_to)
 
+
+    # TODO: save to UserState genserver
+    # :ets.insert(:user_data, {"user_id", user.id})
+
+
     conn
     |> renew_session()
     |> put_token_in_session(token)

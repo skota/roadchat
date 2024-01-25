@@ -63,18 +63,18 @@ defmodule RoadchatWeb.API.V1.LoggedinUsersController do
 
 
   # def update geo position
-  def update_geo_position(conn, %{"user" => user_params}) do
-    IO.puts "inside update geo"
-    IO.inspect user_params
+  def update_geo_position(conn, %{"geo" => geo_params}) do
+    IO.inspect geo_params
 
-    user = LoggedinUsers.get_loggedin_user(user_params["id"])
-    geo = %Geo.Point{coordinates: {user_params["lon"], user_params["lat"]}, srid: 4326}
-    LoggedinUsers.update_loggedin_user(user, %{current_position: geo})
+    user = LoggedinUsers.get_loggedin_user(geo_params["user_id"])
+    geo = %Geo.Point{coordinates: {geo_params["lon"], geo_params["lat"]}, srid: 4326}
+
+    IO.inspect geo
+    # LoggedinUsers.update_loggedin_user(user, %{current_position: geo})
 
     # geo = %Geo.Point{coordinates: {user_params["lon"], user_params["lat"]}, srid: 4326}
     # LoggedinUsers.create_loggedin_user(%{user_id: 155,
     #           logged_in: true, current_position: geo })
-
     conn
     |> put_status(200)
     |> json(%{ok: "geo position updated"})

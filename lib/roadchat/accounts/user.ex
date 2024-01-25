@@ -3,7 +3,9 @@ defmodule Roadchat.Accounts.User do
   import Ecto.Changeset
 
   @derive {Jason.Encoder,
-           only: [:id, :email, :password, :confirmed_at, :fname, :lname, :fb_user_id, :fb_password, :avatar, :stripe_cust_id]}
+           only: [:id, :email, :password, :confirmed_at,
+                  :fname, :lname, :fb_user_id, :fb_password,
+                  :avatar, :stripe_cust_id, :device_token]}
 
   schema "users" do
     field :email, :string
@@ -16,7 +18,7 @@ defmodule Roadchat.Accounts.User do
     field :fb_password, :string
     field :avatar, :string
     field :stripe_cust_id, :string
-
+    field :device_token, :string
     timestamps()
   end
 
@@ -45,7 +47,7 @@ defmodule Roadchat.Accounts.User do
   """
   def registration_changeset(user, attrs, opts \\ []) do
     user
-    |> cast(attrs, [:email, :password, :fname, :lname])
+    |> cast(attrs, [:email, :password, :fname, :lname, :avatar])
     |> validate_email(opts)
     |> validate_password(opts)
   end
@@ -55,6 +57,11 @@ defmodule Roadchat.Accounts.User do
     |> cast(attrs, [:avatar])
     # |> validate_email(opts)
     # |> validate_password(opts)
+  end
+
+  def device_token_changeset(user, attrs, opts \\ []) do
+    user
+    |> cast(attrs, [:device_token])
   end
 
   defp validate_email(changeset, opts) do

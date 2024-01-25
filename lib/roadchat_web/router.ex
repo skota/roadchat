@@ -37,6 +37,11 @@ defmodule RoadchatWeb.Router do
     post "/users/reset_password", Api.V1.ResetPasswordController, :send_reset_token
     get "/users/reset_password/:token", Api.V1.ResetPasswordController, :show_reset_form
 
+    # update device_token -- MOVED it out of api authenticated...when
+    # i call this from swift..i am seeing 401's. DOnt know why
+    post "/devicetoken",  API.V1.DeviceController, :update_device_token
+
+
   end
 
   scope "/api/v1", RoadchatWeb, as: :api do
@@ -51,11 +56,15 @@ defmodule RoadchatWeb.Router do
     post "/commentcount", API.V1.PostController, :comment_count
 
     post "/like", API.V1.PostController, :like_post
-    post "/unlike", API.V1.PostController, :unlike_post
 
     # comments
     get "/comments/:id", API.V1.CommentController, :index
     post "/comment", API.V1.CommentController, :create
+
+
+    # get contacts
+    get "/contacts/:id", API.V1.ChatController, :index
+
 
     # profile
     get "/userdetails/:id", API.V1.ProfileController, :userdetails
@@ -63,17 +72,30 @@ defmodule RoadchatWeb.Router do
 
     get "/likes/:user_id", API.V1.PostController, :get_post_likes
 
-    get "/users/:id", API.V1.ListUserController, :index
+    # get "/users/:id", API.V1.ListUserController, :index
+    get "/search/:search_term", API.V1.SearchController, :index
+
+    post "/addcontact", API.V1.ContactController, :create
+
+    # chats
+    post "/lastchat", API.V1.ChatController, :update
 
     resources "/cards", API.V1.CustomerCardController
-    get "/customercards/:id", API.V1.CustomerCardController, :get_card
-    get "/details_by_paymentmethod/:payment_method_id", API.V1.CustomerCardController, :get_card_details_by_paymentmethod
+    # get "/customercards/:id", API.V1.CustomerCardController, :get_card
+    # get "/details_by_paymentmethod/:payment_method_id", API.V1.CustomerCardController, :get_card_details_by_paymentmethod
 
     get "/getloggedinusers/:id", API.V1.LoggedinUsersController, :get_users_in_range
     post "/loggedinuser", API.V1.LoggedinUsersController, :user_logged_in
     post "/loggedoutuser", API.V1.LoggedinUsersController, :user_logged_out
+
+    # where am i using this???
     post "/updategeo", API.V1.LoggedinUsersController, :update_geo_position
     get "/istokenvalid", API.V1.LoggedinUsersController, :is_token_valid
+
+    # new controller GeoController
+    post "/geopos",  API.V1.GeoController, :manage_geo_pos
+
+
 
 
     # might not need these...as we are using firebase to store assets

@@ -3,7 +3,9 @@ defmodule RoadchatWeb.Api.V1.UserSessionController do
 
   alias Roadchat.{Accounts, Guardian, Settings}
   alias RoadchatWeb.UserAuth
-  alias Roadchat.Repos.CustomerCards
+  alias Roadchat.Servers.UserStateServer
+  # alias Roadchat.Repos.CustomerCards
+
 
   def create(conn, %{"user" => %{"email" => "", "password" => ""}}) do
     conn
@@ -26,18 +28,9 @@ defmodule RoadchatWeb.Api.V1.UserSessionController do
           conn
           |> put_status(201)
 
-        # settings = Settings.get_settings()
+        # store user id in genseever
+        UserStateServer.add_user(user.id)
         settings = []
-        # customer_cards = CustomerCards.list_cards(user.id)
-        # get customer car
-        # payment_method_id =
-        #   if Enum.empty?(customer_cards) do
-        #     nil
-        #   else
-        #     card = Enum.at(customer_cards, 0)
-        #     card.payment_method_id
-        #   end
-
         {:ok, jwt, _full_claims} = Guardian.encode_and_sign(user, %{})
 
         json(conn, %{

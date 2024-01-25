@@ -18,7 +18,7 @@ defmodule Roadchat.Schemas.UserLikes do
   schema "user_likes" do
     field :post_id, :integer
     field :user_id, :integer
-    timestamps()
+    timestamps(type: :utc_datetime)
   end
 
   def changeset(%UserLikes{} = like, attrs) do

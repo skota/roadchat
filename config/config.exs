@@ -10,6 +10,10 @@ import Config
 config :roadchat,
   ecto_repos: [Roadchat.Repo]
 
+# geo config
+config :geo_postgis,
+  json_library: Jason # If you want to set your JSON module
+
 # Configures the endpoint
 config :roadchat, RoadchatWeb.Endpoint,
   url: [host: "localhost"],
