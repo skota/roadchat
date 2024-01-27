@@ -62,7 +62,8 @@ defmodule Roadchat.MixProject do
       {:ex_cldr_numbers, "~> 2.0"},
       {:httpoison, "~> 2.1"},
       {:ex_aws, "~> 2.5"},
-      {:ex_aws_s3, "~> 2.5"}
+      {:ex_aws_s3, "~> 2.5"},
+      {:goth, "~> 1.3"}
 
     ]
   end

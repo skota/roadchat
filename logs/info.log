@@ -13092,3 +13092,2204 @@ Request: POST /api/v1/updategeo
         (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
         (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
         (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+10:27:30.939 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+10:27:30.941 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+10:28:38.749 [info] Application roadchat exited: exited in: Roadchat.Application.start(:normal, [])
+    ** (EXIT) an exception was raised:
+        ** (System.EnvError) could not fetch environment variable "GOOGLE_APPLICATION_CREDENTIALS_JSON" because it is not set
+            (elixir 1.16.0) lib/system.ex:721: System.fetch_env!/1
+            (roadchat 0.1.0) lib/roadchat/application.ex:13: Roadchat.Application.start/2
+            (kernel 9.2) application_master.erl:293: :application_master.start_it_old/4
+10:28:38.754 [info] Application goth exited: :stopped
+10:28:38.754 [info] Application ex_aws_s3 exited: :stopped
+10:28:38.754 [info] Application httpoison exited: :stopped
+10:28:38.754 [info] Application ex_cldr_numbers exited: :stopped
+10:28:38.754 [info] Application digital_token exited: :stopped
+10:28:38.754 [info] Application ex_cldr_currencies exited: :stopped
+10:28:38.754 [info] Application ex_cldr exited: :stopped
+10:28:38.754 [info] Application cldr_utils exited: :stopped
+10:28:38.754 [info] Application ex_unit exited: :stopped
+10:28:38.754 [info] Application timex exited: :stopped
+10:28:38.754 [info] Application combine exited: :stopped
+10:28:38.755 [info] Application tzdata exited: :stopped
+10:28:38.755 [info] Application paginator exited: :stopped
+10:28:38.755 [info] Application geo_postgis exited: :stopped
+10:28:38.755 [info] Application geo exited: :stopped
+10:28:38.756 [info] Application logger_file_backend exited: :stopped
+10:28:38.756 [info] Application guardian exited: :stopped
+10:28:38.756 [info] Application jose exited: :stopped
+10:28:38.756 [info] Application stripity_stripe exited: :stopped
+10:28:38.756 [info] Application uri_query exited: :stopped
+10:28:38.756 [info] Application gettext exited: :stopped
+10:28:38.756 [info] Application expo exited: :stopped
+10:28:38.756 [info] Application telemetry_poller exited: :stopped
+10:28:38.757 [info] Application swoosh exited: :stopped
+10:28:38.757 [info] Application ex_aws exited: :stopped
+10:28:38.757 [info] Application finch exited: :stopped
+10:28:38.757 [info] Application nimble_options exited: :stopped
+10:28:38.757 [info] Application nimble_pool exited: :stopped
+10:28:38.757 [info] Application mint exited: :stopped
+10:28:38.757 [info] Application hpax exited: :stopped
+10:28:38.758 [info] Application hackney exited: :stopped
+10:28:38.758 [info] Application metrics exited: :stopped
+10:28:38.758 [info] Application ssl_verify_fun exited: :stopped
+10:28:38.758 [info] Application parse_trans exited: :stopped
+10:28:38.758 [info] Application syntax_tools exited: :stopped
+10:28:38.758 [info] Application certifi exited: :stopped
+10:28:38.758 [info] Application mimerl exited: :stopped
+10:28:38.758 [info] Application idna exited: :stopped
+10:28:38.758 [info] Application unicode_util_compat exited: :stopped
+10:28:38.758 [info] Application xmerl exited: :stopped
+10:28:38.758 [info] Application tailwind exited: :stopped
+10:28:38.758 [info] Application esbuild exited: :stopped
+10:28:38.758 [info] Application phoenix_live_dashboard exited: :stopped
+10:28:38.758 [info] Application telemetry_metrics exited: :stopped
+10:28:38.758 [info] Application phoenix_live_view exited: :stopped
+10:28:38.759 [info] Application phoenix_live_reload exited: :stopped
+10:28:38.759 [info] Application file_system exited: :stopped
+10:28:38.759 [info] Application ecto_sql exited: :stopped
+10:28:38.759 [info] Application postgrex exited: :stopped
+10:28:38.759 [info] Application db_connection exited: :stopped
+10:28:38.760 [info] Application phoenix_ecto exited: :stopped
+10:28:38.760 [info] Application ecto exited: :stopped
+10:28:38.760 [info] Application phoenix exited: :stopped
+10:28:38.760 [info] Application jason exited: :stopped
+10:28:38.760 [info] Application decimal exited: :stopped
+10:28:38.760 [info] Application castore exited: :stopped
+10:28:38.760 [info] Application websock_adapter exited: :stopped
+10:28:38.760 [info] Application plug_cowboy exited: :stopped
+10:28:38.760 [info] Application cowboy_telemetry exited: :stopped
+10:28:38.760 [info] Application cowboy exited: :stopped
+10:28:38.761 [info] Application ranch exited: :stopped
+10:28:38.761 [info] Application cowlib exited: :stopped
+10:28:38.761 [info] Application websock exited: :stopped
+10:28:38.761 [info] Application phoenix_template exited: :stopped
+10:28:38.761 [info] Application phoenix_html exited: :stopped
+10:28:38.761 [info] Application phoenix_pubsub exited: :stopped
+10:28:38.761 [info] Application plug exited: :stopped
+10:28:38.761 [info] Application telemetry exited: :stopped
+10:28:38.762 [info] Application plug_crypto exited: :stopped
+10:28:38.762 [info] Application mime exited: :stopped
+10:28:38.762 [info] Application eex exited: :stopped
+10:28:38.762 [info] Application bcrypt_elixir exited: :stopped
+10:28:38.762 [info] Application comeonin exited: :stopped
+10:28:38.762 [info] Application runtime_tools exited: :stopped
+10:30:39.423 [info] Application roadchat exited: exited in: Roadchat.Application.start(:normal, [])
+    ** (EXIT) an exception was raised:
+        ** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+            (jason 1.4.1) lib/jason.ex:92: Jason.decode!/2
+            (roadchat 0.1.0) lib/roadchat/application.ex:14: Roadchat.Application.start/2
+            (kernel 9.2) application_master.erl:293: :application_master.start_it_old/4
+10:30:39.427 [info] Application goth exited: :stopped
+10:30:39.427 [info] Application ex_aws_s3 exited: :stopped
+10:30:39.427 [info] Application httpoison exited: :stopped
+10:30:39.427 [info] Application ex_cldr_numbers exited: :stopped
+10:30:39.427 [info] Application digital_token exited: :stopped
+10:30:39.427 [info] Application ex_cldr_currencies exited: :stopped
+10:30:39.427 [info] Application ex_cldr exited: :stopped
+10:30:39.427 [info] Application cldr_utils exited: :stopped
+10:30:39.428 [info] Application ex_unit exited: :stopped
+10:30:39.428 [info] Application timex exited: :stopped
+10:30:39.428 [info] Application combine exited: :stopped
+10:30:39.429 [info] Application tzdata exited: :stopped
+10:30:39.429 [info] Application paginator exited: :stopped
+10:30:39.429 [info] Application geo_postgis exited: :stopped
+10:30:39.429 [info] Application geo exited: :stopped
+10:30:39.429 [info] Application logger_file_backend exited: :stopped
+10:30:39.429 [info] Application guardian exited: :stopped
+10:30:39.429 [info] Application jose exited: :stopped
+10:30:39.430 [info] Application stripity_stripe exited: :stopped
+10:30:39.430 [info] Application uri_query exited: :stopped
+10:30:39.430 [info] Application gettext exited: :stopped
+10:30:39.430 [info] Application expo exited: :stopped
+10:30:39.430 [info] Application telemetry_poller exited: :stopped
+10:30:39.430 [info] Application swoosh exited: :stopped
+10:30:39.431 [info] Application ex_aws exited: :stopped
+10:30:39.431 [info] Application finch exited: :stopped
+10:30:39.431 [info] Application nimble_options exited: :stopped
+10:30:39.431 [info] Application nimble_pool exited: :stopped
+10:30:39.431 [info] Application mint exited: :stopped
+10:30:39.431 [info] Application hpax exited: :stopped
+10:30:39.431 [info] Application hackney exited: :stopped
+10:30:39.431 [info] Application metrics exited: :stopped
+10:30:39.431 [info] Application ssl_verify_fun exited: :stopped
+10:30:39.431 [info] Application parse_trans exited: :stopped
+10:30:39.431 [info] Application syntax_tools exited: :stopped
+10:30:39.431 [info] Application certifi exited: :stopped
+10:30:39.431 [info] Application mimerl exited: :stopped
+10:30:39.431 [info] Application idna exited: :stopped
+10:30:39.431 [info] Application unicode_util_compat exited: :stopped
+10:30:39.431 [info] Application xmerl exited: :stopped
+10:30:39.432 [info] Application tailwind exited: :stopped
+10:30:39.432 [info] Application esbuild exited: :stopped
+10:30:39.432 [info] Application phoenix_live_dashboard exited: :stopped
+10:30:39.432 [info] Application telemetry_metrics exited: :stopped
+10:30:39.432 [info] Application phoenix_live_view exited: :stopped
+10:30:39.432 [info] Application phoenix_live_reload exited: :stopped
+10:30:39.432 [info] Application file_system exited: :stopped
+10:30:39.433 [info] Application ecto_sql exited: :stopped
+10:30:39.433 [info] Application postgrex exited: :stopped
+10:30:39.433 [info] Application db_connection exited: :stopped
+10:30:39.433 [info] Application phoenix_ecto exited: :stopped
+10:30:39.433 [info] Application ecto exited: :stopped
+10:30:39.434 [info] Application phoenix exited: :stopped
+10:30:39.434 [info] Application jason exited: :stopped
+10:30:39.434 [info] Application decimal exited: :stopped
+10:30:39.434 [info] Application castore exited: :stopped
+10:30:39.434 [info] Application websock_adapter exited: :stopped
+10:30:39.434 [info] Application plug_cowboy exited: :stopped
+10:30:39.434 [info] Application cowboy_telemetry exited: :stopped
+10:30:39.434 [info] Application cowboy exited: :stopped
+10:30:39.434 [info] Application ranch exited: :stopped
+10:30:39.434 [info] Application cowlib exited: :stopped
+10:30:39.434 [info] Application websock exited: :stopped
+10:30:39.434 [info] Application phoenix_template exited: :stopped
+10:30:39.434 [info] Application phoenix_html exited: :stopped
+10:30:39.435 [info] Application phoenix_pubsub exited: :stopped
+10:30:39.435 [info] Application plug exited: :stopped
+10:30:39.435 [info] Application telemetry exited: :stopped
+10:30:39.435 [info] Application plug_crypto exited: :stopped
+10:30:39.435 [info] Application mime exited: :stopped
+10:30:39.435 [info] Application eex exited: :stopped
+10:30:39.435 [info] Application bcrypt_elixir exited: :stopped
+10:30:39.435 [info] Application comeonin exited: :stopped
+10:30:39.436 [info] Application runtime_tools exited: :stopped
+10:31:48.946 [info] Application roadchat exited: exited in: Roadchat.Application.start(:normal, [])
+    ** (EXIT) an exception was raised:
+        ** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+            (jason 1.4.1) lib/jason.ex:92: Jason.decode!/2
+            (roadchat 0.1.0) lib/roadchat/application.ex:14: Roadchat.Application.start/2
+            (kernel 9.2) application_master.erl:293: :application_master.start_it_old/4
+10:31:48.950 [info] Application goth exited: :stopped
+10:31:48.950 [info] Application ex_aws_s3 exited: :stopped
+10:31:48.950 [info] Application httpoison exited: :stopped
+10:31:48.950 [info] Application ex_cldr_numbers exited: :stopped
+10:31:48.950 [info] Application digital_token exited: :stopped
+10:31:48.950 [info] Application ex_cldr_currencies exited: :stopped
+10:31:48.950 [info] Application ex_cldr exited: :stopped
+10:31:48.950 [info] Application cldr_utils exited: :stopped
+10:31:48.950 [info] Application ex_unit exited: :stopped
+10:31:48.951 [info] Application timex exited: :stopped
+10:31:48.951 [info] Application combine exited: :stopped
+10:31:48.952 [info] Application tzdata exited: :stopped
+10:31:48.952 [info] Application paginator exited: :stopped
+10:31:48.952 [info] Application geo_postgis exited: :stopped
+10:31:48.952 [info] Application geo exited: :stopped
+10:31:48.952 [info] Application logger_file_backend exited: :stopped
+10:31:48.952 [info] Application guardian exited: :stopped
+10:31:48.952 [info] Application jose exited: :stopped
+10:31:48.952 [info] Application stripity_stripe exited: :stopped
+10:31:48.952 [info] Application uri_query exited: :stopped
+10:31:48.953 [info] Application gettext exited: :stopped
+10:31:48.953 [info] Application expo exited: :stopped
+10:31:48.953 [info] Application telemetry_poller exited: :stopped
+10:31:48.953 [info] Application swoosh exited: :stopped
+10:31:48.953 [info] Application ex_aws exited: :stopped
+10:31:48.953 [info] Application finch exited: :stopped
+10:31:48.953 [info] Application nimble_options exited: :stopped
+10:31:48.954 [info] Application nimble_pool exited: :stopped
+10:31:48.954 [info] Application mint exited: :stopped
+10:31:48.954 [info] Application hpax exited: :stopped
+10:31:48.954 [info] Application hackney exited: :stopped
+10:31:48.954 [info] Application metrics exited: :stopped
+10:31:48.954 [info] Application ssl_verify_fun exited: :stopped
+10:31:48.954 [info] Application parse_trans exited: :stopped
+10:31:48.954 [info] Application syntax_tools exited: :stopped
+10:31:48.954 [info] Application certifi exited: :stopped
+10:31:48.954 [info] Application mimerl exited: :stopped
+10:31:48.954 [info] Application idna exited: :stopped
+10:31:48.954 [info] Application unicode_util_compat exited: :stopped
+10:31:48.954 [info] Application xmerl exited: :stopped
+10:31:48.955 [info] Application tailwind exited: :stopped
+10:31:48.955 [info] Application esbuild exited: :stopped
+10:31:48.955 [info] Application phoenix_live_dashboard exited: :stopped
+10:31:48.955 [info] Application telemetry_metrics exited: :stopped
+10:31:48.955 [info] Application phoenix_live_view exited: :stopped
+10:31:48.955 [info] Application phoenix_live_reload exited: :stopped
+10:31:48.956 [info] Application file_system exited: :stopped
+10:31:48.956 [info] Application ecto_sql exited: :stopped
+10:31:48.956 [info] Application postgrex exited: :stopped
+10:31:48.956 [info] Application db_connection exited: :stopped
+10:31:48.956 [info] Application phoenix_ecto exited: :stopped
+10:31:48.957 [info] Application ecto exited: :stopped
+10:31:48.957 [info] Application phoenix exited: :stopped
+10:31:48.957 [info] Application jason exited: :stopped
+10:31:48.957 [info] Application decimal exited: :stopped
+10:31:48.957 [info] Application castore exited: :stopped
+10:31:48.957 [info] Application websock_adapter exited: :stopped
+10:31:48.957 [info] Application plug_cowboy exited: :stopped
+10:31:48.957 [info] Application cowboy_telemetry exited: :stopped
+10:31:48.957 [info] Application cowboy exited: :stopped
+10:31:48.957 [info] Application ranch exited: :stopped
+10:31:48.957 [info] Application cowlib exited: :stopped
+10:31:48.957 [info] Application websock exited: :stopped
+10:31:48.958 [info] Application phoenix_template exited: :stopped
+10:31:48.958 [info] Application phoenix_html exited: :stopped
+10:31:48.958 [info] Application phoenix_pubsub exited: :stopped
+10:31:48.958 [info] Application plug exited: :stopped
+10:31:48.958 [info] Application telemetry exited: :stopped
+10:31:48.958 [info] Application plug_crypto exited: :stopped
+10:31:48.958 [info] Application mime exited: :stopped
+10:31:48.958 [info] Application eex exited: :stopped
+10:31:48.958 [info] Application bcrypt_elixir exited: :stopped
+10:31:48.958 [info] Application comeonin exited: :stopped
+10:31:48.959 [info] Application runtime_tools exited: :stopped
+10:33:39.475 [info] Application roadchat exited: exited in: Roadchat.Application.start(:normal, [])
+    ** (EXIT) an exception was raised:
+        ** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+            (jason 1.4.1) lib/jason.ex:92: Jason.decode!/2
+            (roadchat 0.1.0) lib/roadchat/application.ex:14: Roadchat.Application.start/2
+            (kernel 9.2) application_master.erl:293: :application_master.start_it_old/4
+10:33:39.481 [info] Application goth exited: :stopped
+10:33:39.481 [info] Application ex_aws_s3 exited: :stopped
+10:33:39.481 [info] Application httpoison exited: :stopped
+10:33:39.481 [info] Application ex_cldr_numbers exited: :stopped
+10:33:39.481 [info] Application digital_token exited: :stopped
+10:33:39.481 [info] Application ex_cldr_currencies exited: :stopped
+10:33:39.481 [info] Application ex_cldr exited: :stopped
+10:33:39.481 [info] Application cldr_utils exited: :stopped
+10:33:39.481 [info] Application ex_unit exited: :stopped
+10:33:39.481 [info] Application timex exited: :stopped
+10:33:39.481 [info] Application combine exited: :stopped
+10:33:39.482 [info] Application tzdata exited: :stopped
+10:33:39.482 [info] Application paginator exited: :stopped
+10:33:39.482 [info] Application geo_postgis exited: :stopped
+10:33:39.483 [info] Application geo exited: :stopped
+10:33:39.483 [info] Application logger_file_backend exited: :stopped
+10:33:39.483 [info] Application guardian exited: :stopped
+10:33:39.483 [info] Application jose exited: :stopped
+10:33:39.483 [info] Application stripity_stripe exited: :stopped
+10:33:39.483 [info] Application uri_query exited: :stopped
+10:33:39.483 [info] Application gettext exited: :stopped
+10:33:39.483 [info] Application expo exited: :stopped
+10:33:39.483 [info] Application telemetry_poller exited: :stopped
+10:33:39.484 [info] Application swoosh exited: :stopped
+10:33:39.484 [info] Application ex_aws exited: :stopped
+10:33:39.484 [info] Application finch exited: :stopped
+10:33:39.484 [info] Application nimble_options exited: :stopped
+10:33:39.484 [info] Application nimble_pool exited: :stopped
+10:33:39.484 [info] Application mint exited: :stopped
+10:33:39.484 [info] Application hpax exited: :stopped
+10:33:39.485 [info] Application hackney exited: :stopped
+10:33:39.485 [info] Application metrics exited: :stopped
+10:33:39.485 [info] Application ssl_verify_fun exited: :stopped
+10:33:39.485 [info] Application parse_trans exited: :stopped
+10:33:39.485 [info] Application syntax_tools exited: :stopped
+10:33:39.485 [info] Application certifi exited: :stopped
+10:33:39.485 [info] Application mimerl exited: :stopped
+10:33:39.485 [info] Application idna exited: :stopped
+10:33:39.485 [info] Application unicode_util_compat exited: :stopped
+10:33:39.485 [info] Application xmerl exited: :stopped
+10:33:39.485 [info] Application tailwind exited: :stopped
+10:33:39.485 [info] Application esbuild exited: :stopped
+10:33:39.485 [info] Application phoenix_live_dashboard exited: :stopped
+10:33:39.485 [info] Application telemetry_metrics exited: :stopped
+10:33:39.486 [info] Application phoenix_live_view exited: :stopped
+10:33:39.486 [info] Application phoenix_live_reload exited: :stopped
+10:33:39.486 [info] Application file_system exited: :stopped
+10:33:39.486 [info] Application ecto_sql exited: :stopped
+10:33:39.486 [info] Application postgrex exited: :stopped
+10:33:39.486 [info] Application db_connection exited: :stopped
+10:33:39.487 [info] Application phoenix_ecto exited: :stopped
+10:33:39.487 [info] Application ecto exited: :stopped
+10:33:39.487 [info] Application phoenix exited: :stopped
+10:33:39.487 [info] Application jason exited: :stopped
+10:33:39.487 [info] Application decimal exited: :stopped
+10:33:39.487 [info] Application castore exited: :stopped
+10:33:39.487 [info] Application websock_adapter exited: :stopped
+10:33:39.487 [info] Application plug_cowboy exited: :stopped
+10:33:39.487 [info] Application cowboy_telemetry exited: :stopped
+10:33:39.488 [info] Application cowboy exited: :stopped
+10:33:39.488 [info] Application ranch exited: :stopped
+10:33:39.488 [info] Application cowlib exited: :stopped
+10:33:39.488 [info] Application websock exited: :stopped
+10:33:39.488 [info] Application phoenix_template exited: :stopped
+10:33:39.488 [info] Application phoenix_html exited: :stopped
+10:33:39.488 [info] Application phoenix_pubsub exited: :stopped
+10:33:39.488 [info] Application plug exited: :stopped
+10:33:39.489 [info] Application telemetry exited: :stopped
+10:33:39.489 [info] Application plug_crypto exited: :stopped
+10:33:39.489 [info] Application mime exited: :stopped
+10:33:39.489 [info] Application eex exited: :stopped
+10:33:39.489 [info] Application bcrypt_elixir exited: :stopped
+10:33:39.489 [info] Application comeonin exited: :stopped
+10:33:39.489 [info] Application runtime_tools exited: :stopped
+10:34:00.411 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+10:34:00.415 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+10:35:29.239 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+10:35:29.242 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+10:39:41.892 [info] Application roadchat exited: exited in: Roadchat.Application.start(:normal, [])
+    ** (EXIT) an exception was raised:
+        ** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+            (jason 1.4.1) lib/jason.ex:92: Jason.decode!/2
+            (roadchat 0.1.0) lib/roadchat/application.ex:14: Roadchat.Application.start/2
+            (kernel 9.2) application_master.erl:293: :application_master.start_it_old/4
+10:39:41.897 [info] Application goth exited: :stopped
+10:39:41.897 [info] Application ex_aws_s3 exited: :stopped
+10:39:41.897 [info] Application httpoison exited: :stopped
+10:39:41.897 [info] Application ex_cldr_numbers exited: :stopped
+10:39:41.897 [info] Application digital_token exited: :stopped
+10:39:41.897 [info] Application ex_cldr_currencies exited: :stopped
+10:39:41.897 [info] Application ex_cldr exited: :stopped
+10:39:41.897 [info] Application cldr_utils exited: :stopped
+10:39:41.897 [info] Application ex_unit exited: :stopped
+10:39:41.897 [info] Application timex exited: :stopped
+10:39:41.897 [info] Application combine exited: :stopped
+10:39:41.898 [info] Application tzdata exited: :stopped
+10:39:41.898 [info] Application paginator exited: :stopped
+10:39:41.898 [info] Application geo_postgis exited: :stopped
+10:39:41.898 [info] Application geo exited: :stopped
+10:39:41.898 [info] Application logger_file_backend exited: :stopped
+10:39:41.898 [info] Application guardian exited: :stopped
+10:39:41.899 [info] Application jose exited: :stopped
+10:39:41.899 [info] Application stripity_stripe exited: :stopped
+10:39:41.899 [info] Application uri_query exited: :stopped
+10:39:41.899 [info] Application gettext exited: :stopped
+10:39:41.899 [info] Application expo exited: :stopped
+10:39:41.899 [info] Application telemetry_poller exited: :stopped
+10:39:41.900 [info] Application swoosh exited: :stopped
+10:39:41.900 [info] Application ex_aws exited: :stopped
+10:39:41.900 [info] Application finch exited: :stopped
+10:39:41.900 [info] Application nimble_options exited: :stopped
+10:39:41.900 [info] Application nimble_pool exited: :stopped
+10:39:41.900 [info] Application mint exited: :stopped
+10:39:41.900 [info] Application hpax exited: :stopped
+10:39:41.900 [info] Application hackney exited: :stopped
+10:39:41.900 [info] Application metrics exited: :stopped
+10:39:41.900 [info] Application ssl_verify_fun exited: :stopped
+10:39:41.900 [info] Application parse_trans exited: :stopped
+10:39:41.900 [info] Application syntax_tools exited: :stopped
+10:39:41.901 [info] Application certifi exited: :stopped
+10:39:41.901 [info] Application mimerl exited: :stopped
+10:39:41.901 [info] Application idna exited: :stopped
+10:39:41.901 [info] Application unicode_util_compat exited: :stopped
+10:39:41.901 [info] Application xmerl exited: :stopped
+10:39:41.901 [info] Application tailwind exited: :stopped
+10:39:41.901 [info] Application esbuild exited: :stopped
+10:39:41.901 [info] Application phoenix_live_dashboard exited: :stopped
+10:39:41.902 [info] Application telemetry_metrics exited: :stopped
+10:39:41.902 [info] Application phoenix_live_view exited: :stopped
+10:39:41.902 [info] Application phoenix_live_reload exited: :stopped
+10:39:41.902 [info] Application file_system exited: :stopped
+10:39:41.902 [info] Application ecto_sql exited: :stopped
+10:39:41.902 [info] Application postgrex exited: :stopped
+10:39:41.903 [info] Application db_connection exited: :stopped
+10:39:41.903 [info] Application phoenix_ecto exited: :stopped
+10:39:41.903 [info] Application ecto exited: :stopped
+10:39:41.903 [info] Application phoenix exited: :stopped
+10:39:41.903 [info] Application jason exited: :stopped
+10:39:41.903 [info] Application decimal exited: :stopped
+10:39:41.903 [info] Application castore exited: :stopped
+10:39:41.903 [info] Application websock_adapter exited: :stopped
+10:39:41.903 [info] Application plug_cowboy exited: :stopped
+10:39:41.904 [info] Application cowboy_telemetry exited: :stopped
+10:39:41.904 [info] Application cowboy exited: :stopped
+10:39:41.904 [info] Application ranch exited: :stopped
+10:39:41.904 [info] Application cowlib exited: :stopped
+10:39:41.904 [info] Application websock exited: :stopped
+10:39:41.904 [info] Application phoenix_template exited: :stopped
+10:39:41.904 [info] Application phoenix_html exited: :stopped
+10:39:41.904 [info] Application phoenix_pubsub exited: :stopped
+10:39:41.904 [info] Application plug exited: :stopped
+10:39:41.905 [info] Application telemetry exited: :stopped
+10:39:41.905 [info] Application plug_crypto exited: :stopped
+10:39:41.905 [info] Application mime exited: :stopped
+10:39:41.905 [info] Application eex exited: :stopped
+10:39:41.905 [info] Application bcrypt_elixir exited: :stopped
+10:39:41.905 [info] Application comeonin exited: :stopped
+10:39:41.905 [info] Application runtime_tools exited: :stopped
+10:40:04.981 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+10:40:04.984 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+10:40:04.990 [error] GenServer {Goth.Registry, Roadchat.Goth} terminating
+** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+    (goth 1.4.2) lib/goth/config.ex:70: Goth.Config.ensure_started/0
+    (goth 1.4.2) lib/goth/config.ex:339: Goth.Config.get/2
+    (goth 1.4.2) lib/goth/token.ex:231: Goth.Token.request/1
+    (goth 1.4.2) lib/goth.ex:197: Goth.prefetch/1
+    (goth 1.4.2) lib/goth.ex:190: Goth.handle_continue/2
+    (stdlib 5.2) gen_server.erl:1085: :gen_server.try_handle_continue/3
+    (stdlib 5.2) gen_server.erl:995: :gen_server.loop/7
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: {:continue, :async_prefetch}
+State: %Goth{name: Roadchat.Goth, source: {:default, []}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0}
+10:40:05.003 [error] GenServer {Goth.Registry, Roadchat.Goth} terminating
+** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+    (goth 1.4.2) lib/goth/config.ex:70: Goth.Config.ensure_started/0
+    (goth 1.4.2) lib/goth/config.ex:339: Goth.Config.get/2
+    (goth 1.4.2) lib/goth/token.ex:231: Goth.Token.request/1
+    (goth 1.4.2) lib/goth.ex:197: Goth.prefetch/1
+    (goth 1.4.2) lib/goth.ex:190: Goth.handle_continue/2
+    (stdlib 5.2) gen_server.erl:1085: :gen_server.try_handle_continue/3
+    (stdlib 5.2) gen_server.erl:995: :gen_server.loop/7
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: {:continue, :async_prefetch}
+State: %Goth{name: Roadchat.Goth, source: {:default, []}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0}
+10:40:05.003 [error] GenServer {Goth.Registry, Roadchat.Goth} terminating
+** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+    (goth 1.4.2) lib/goth/config.ex:70: Goth.Config.ensure_started/0
+    (goth 1.4.2) lib/goth/config.ex:339: Goth.Config.get/2
+    (goth 1.4.2) lib/goth/token.ex:231: Goth.Token.request/1
+    (goth 1.4.2) lib/goth.ex:197: Goth.prefetch/1
+    (goth 1.4.2) lib/goth.ex:190: Goth.handle_continue/2
+    (stdlib 5.2) gen_server.erl:1085: :gen_server.try_handle_continue/3
+    (stdlib 5.2) gen_server.erl:995: :gen_server.loop/7
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: {:continue, :async_prefetch}
+State: %Goth{name: Roadchat.Goth, source: {:default, []}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0}
+10:40:05.004 [error] GenServer {Goth.Registry, Roadchat.Goth} terminating
+** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+    (goth 1.4.2) lib/goth/config.ex:70: Goth.Config.ensure_started/0
+    (goth 1.4.2) lib/goth/config.ex:339: Goth.Config.get/2
+    (goth 1.4.2) lib/goth/token.ex:231: Goth.Token.request/1
+    (goth 1.4.2) lib/goth.ex:197: Goth.prefetch/1
+    (goth 1.4.2) lib/goth.ex:190: Goth.handle_continue/2
+    (stdlib 5.2) gen_server.erl:1085: :gen_server.try_handle_continue/3
+    (stdlib 5.2) gen_server.erl:995: :gen_server.loop/7
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: {:continue, :async_prefetch}
+State: %Goth{name: Roadchat.Goth, source: {:default, []}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0}
+10:40:05.007 [info] Application roadchat exited: shutdown
+10:41:41.697 [info] Application roadchat exited: exited in: Roadchat.Application.start(:normal, [])
+    ** (EXIT) an exception was raised:
+        ** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+            (jason 1.4.1) lib/jason.ex:92: Jason.decode!/2
+            (roadchat 0.1.0) lib/roadchat/application.ex:14: Roadchat.Application.start/2
+            (kernel 9.2) application_master.erl:293: :application_master.start_it_old/4
+10:41:41.703 [info] Application goth exited: :stopped
+10:41:41.703 [info] Application ex_aws_s3 exited: :stopped
+10:41:41.703 [info] Application httpoison exited: :stopped
+10:41:41.703 [info] Application ex_cldr_numbers exited: :stopped
+10:41:41.703 [info] Application digital_token exited: :stopped
+10:41:41.703 [info] Application ex_cldr_currencies exited: :stopped
+10:41:41.703 [info] Application ex_cldr exited: :stopped
+10:41:41.703 [info] Application cldr_utils exited: :stopped
+10:41:41.703 [info] Application ex_unit exited: :stopped
+10:41:41.703 [info] Application timex exited: :stopped
+10:41:41.704 [info] Application combine exited: :stopped
+10:41:41.705 [info] Application tzdata exited: :stopped
+10:41:41.705 [info] Application paginator exited: :stopped
+10:41:41.705 [info] Application geo_postgis exited: :stopped
+10:41:41.705 [info] Application geo exited: :stopped
+10:41:41.705 [info] Application logger_file_backend exited: :stopped
+10:41:41.705 [info] Application guardian exited: :stopped
+10:41:41.705 [info] Application jose exited: :stopped
+10:41:41.705 [info] Application stripity_stripe exited: :stopped
+10:41:41.705 [info] Application uri_query exited: :stopped
+10:41:41.705 [info] Application gettext exited: :stopped
+10:41:41.705 [info] Application expo exited: :stopped
+10:41:41.706 [info] Application telemetry_poller exited: :stopped
+10:41:41.706 [info] Application swoosh exited: :stopped
+10:41:41.706 [info] Application ex_aws exited: :stopped
+10:41:41.706 [info] Application finch exited: :stopped
+10:41:41.706 [info] Application nimble_options exited: :stopped
+10:41:41.706 [info] Application nimble_pool exited: :stopped
+10:41:41.706 [info] Application mint exited: :stopped
+10:41:41.706 [info] Application hpax exited: :stopped
+10:41:41.707 [info] Application hackney exited: :stopped
+10:41:41.707 [info] Application metrics exited: :stopped
+10:41:41.707 [info] Application ssl_verify_fun exited: :stopped
+10:41:41.707 [info] Application parse_trans exited: :stopped
+10:41:41.707 [info] Application syntax_tools exited: :stopped
+10:41:41.707 [info] Application certifi exited: :stopped
+10:41:41.707 [info] Application mimerl exited: :stopped
+10:41:41.707 [info] Application idna exited: :stopped
+10:41:41.707 [info] Application unicode_util_compat exited: :stopped
+10:41:41.707 [info] Application xmerl exited: :stopped
+10:41:41.707 [info] Application tailwind exited: :stopped
+10:41:41.707 [info] Application esbuild exited: :stopped
+10:41:41.707 [info] Application phoenix_live_dashboard exited: :stopped
+10:41:41.707 [info] Application telemetry_metrics exited: :stopped
+10:41:41.708 [info] Application phoenix_live_view exited: :stopped
+10:41:41.708 [info] Application phoenix_live_reload exited: :stopped
+10:41:41.708 [info] Application file_system exited: :stopped
+10:41:41.708 [info] Application ecto_sql exited: :stopped
+10:41:41.708 [info] Application postgrex exited: :stopped
+10:41:41.708 [info] Application db_connection exited: :stopped
+10:41:41.709 [info] Application phoenix_ecto exited: :stopped
+10:41:41.709 [info] Application ecto exited: :stopped
+10:41:41.709 [info] Application phoenix exited: :stopped
+10:41:41.709 [info] Application jason exited: :stopped
+10:41:41.709 [info] Application decimal exited: :stopped
+10:41:41.709 [info] Application castore exited: :stopped
+10:41:41.709 [info] Application websock_adapter exited: :stopped
+10:41:41.709 [info] Application plug_cowboy exited: :stopped
+10:41:41.709 [info] Application cowboy_telemetry exited: :stopped
+10:41:41.709 [info] Application cowboy exited: :stopped
+10:41:41.710 [info] Application ranch exited: :stopped
+10:41:41.710 [info] Application cowlib exited: :stopped
+10:41:41.710 [info] Application websock exited: :stopped
+10:41:41.710 [info] Application phoenix_template exited: :stopped
+10:41:41.710 [info] Application phoenix_html exited: :stopped
+10:41:41.710 [info] Application phoenix_pubsub exited: :stopped
+10:41:41.710 [info] Application plug exited: :stopped
+10:41:41.710 [info] Application telemetry exited: :stopped
+10:41:41.710 [info] Application plug_crypto exited: :stopped
+10:41:41.711 [info] Application mime exited: :stopped
+10:41:41.711 [info] Application eex exited: :stopped
+10:41:41.711 [info] Application bcrypt_elixir exited: :stopped
+10:41:41.711 [info] Application comeonin exited: :stopped
+10:41:41.711 [info] Application runtime_tools exited: :stopped
+10:47:15.995 [info] Application roadchat exited: exited in: Roadchat.Application.start(:normal, [])
+    ** (EXIT) an exception was raised:
+        ** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+            (jason 1.4.1) lib/jason.ex:92: Jason.decode!/2
+            (roadchat 0.1.0) lib/roadchat/application.ex:14: Roadchat.Application.start/2
+            (kernel 9.2) application_master.erl:293: :application_master.start_it_old/4
+10:47:16.000 [info] Application goth exited: :stopped
+10:47:16.000 [info] Application ex_aws_s3 exited: :stopped
+10:47:16.000 [info] Application httpoison exited: :stopped
+10:47:16.000 [info] Application ex_cldr_numbers exited: :stopped
+10:47:16.000 [info] Application digital_token exited: :stopped
+10:47:16.000 [info] Application ex_cldr_currencies exited: :stopped
+10:47:16.000 [info] Application ex_cldr exited: :stopped
+10:47:16.000 [info] Application cldr_utils exited: :stopped
+10:47:16.001 [info] Application ex_unit exited: :stopped
+10:47:16.001 [info] Application timex exited: :stopped
+10:47:16.001 [info] Application combine exited: :stopped
+10:47:16.002 [info] Application tzdata exited: :stopped
+10:47:16.002 [info] Application paginator exited: :stopped
+10:47:16.002 [info] Application geo_postgis exited: :stopped
+10:47:16.002 [info] Application geo exited: :stopped
+10:47:16.002 [info] Application logger_file_backend exited: :stopped
+10:47:16.002 [info] Application guardian exited: :stopped
+10:47:16.002 [info] Application jose exited: :stopped
+10:47:16.003 [info] Application stripity_stripe exited: :stopped
+10:47:16.003 [info] Application uri_query exited: :stopped
+10:47:16.003 [info] Application gettext exited: :stopped
+10:47:16.003 [info] Application expo exited: :stopped
+10:47:16.003 [info] Application telemetry_poller exited: :stopped
+10:47:16.003 [info] Application swoosh exited: :stopped
+10:47:16.004 [info] Application ex_aws exited: :stopped
+10:47:16.004 [info] Application finch exited: :stopped
+10:47:16.004 [info] Application nimble_options exited: :stopped
+10:47:16.004 [info] Application nimble_pool exited: :stopped
+10:47:16.004 [info] Application mint exited: :stopped
+10:47:16.004 [info] Application hpax exited: :stopped
+10:47:16.004 [info] Application hackney exited: :stopped
+10:47:16.004 [info] Application metrics exited: :stopped
+10:47:16.004 [info] Application ssl_verify_fun exited: :stopped
+10:47:16.004 [info] Application parse_trans exited: :stopped
+10:47:16.004 [info] Application syntax_tools exited: :stopped
+10:47:16.004 [info] Application certifi exited: :stopped
+10:47:16.004 [info] Application mimerl exited: :stopped
+10:47:16.004 [info] Application idna exited: :stopped
+10:47:16.004 [info] Application unicode_util_compat exited: :stopped
+10:47:16.004 [info] Application xmerl exited: :stopped
+10:47:16.005 [info] Application tailwind exited: :stopped
+10:47:16.005 [info] Application esbuild exited: :stopped
+10:47:16.005 [info] Application phoenix_live_dashboard exited: :stopped
+10:47:16.005 [info] Application telemetry_metrics exited: :stopped
+10:47:16.005 [info] Application phoenix_live_view exited: :stopped
+10:47:16.005 [info] Application phoenix_live_reload exited: :stopped
+10:47:16.006 [info] Application file_system exited: :stopped
+10:47:16.006 [info] Application ecto_sql exited: :stopped
+10:47:16.006 [info] Application postgrex exited: :stopped
+10:47:16.006 [info] Application db_connection exited: :stopped
+10:47:16.006 [info] Application phoenix_ecto exited: :stopped
+10:47:16.007 [info] Application ecto exited: :stopped
+10:47:16.007 [info] Application phoenix exited: :stopped
+10:47:16.007 [info] Application jason exited: :stopped
+10:47:16.007 [info] Application decimal exited: :stopped
+10:47:16.007 [info] Application castore exited: :stopped
+10:47:16.007 [info] Application websock_adapter exited: :stopped
+10:47:16.007 [info] Application plug_cowboy exited: :stopped
+10:47:16.007 [info] Application cowboy_telemetry exited: :stopped
+10:47:16.007 [info] Application cowboy exited: :stopped
+10:47:16.007 [info] Application ranch exited: :stopped
+10:47:16.007 [info] Application cowlib exited: :stopped
+10:47:16.007 [info] Application websock exited: :stopped
+10:47:16.008 [info] Application phoenix_template exited: :stopped
+10:47:16.008 [info] Application phoenix_html exited: :stopped
+10:47:16.008 [info] Application phoenix_pubsub exited: :stopped
+10:47:16.008 [info] Application plug exited: :stopped
+10:47:16.008 [info] Application telemetry exited: :stopped
+10:47:16.008 [info] Application plug_crypto exited: :stopped
+10:47:16.008 [info] Application mime exited: :stopped
+10:47:16.008 [info] Application eex exited: :stopped
+10:47:16.008 [info] Application bcrypt_elixir exited: :stopped
+10:47:16.008 [info] Application comeonin exited: :stopped
+10:47:16.008 [info] Application runtime_tools exited: :stopped
+10:49:21.688 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+10:49:21.690 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+10:49:21.697 [error] GenServer {Goth.Registry, Roadchat.Goth} terminating
+** (FunctionClauseError) no function clause matching in Goth.Token.request/1
+    (goth 1.4.2) lib/goth/token.ex:230: Goth.Token.request(%Goth{name: Roadchat.Goth, source: {:service_account, "/Users/sriramkota/Downloads/roadchatapp-firebase-adminsdk-2kwnr-7a5aa2c73b.json", []}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0})
+    (goth 1.4.2) lib/goth.ex:197: Goth.prefetch/1
+    (goth 1.4.2) lib/goth.ex:190: Goth.handle_continue/2
+    (stdlib 5.2) gen_server.erl:1085: :gen_server.try_handle_continue/3
+    (stdlib 5.2) gen_server.erl:995: :gen_server.loop/7
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: {:continue, :async_prefetch}
+State: %Goth{name: Roadchat.Goth, source: {:service_account, "/Users/sriramkota/Downloads/roadchatapp-firebase-adminsdk-2kwnr-7a5aa2c73b.json"}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0}
+10:49:21.717 [error] GenServer {Goth.Registry, Roadchat.Goth} terminating
+** (FunctionClauseError) no function clause matching in Goth.Token.request/1
+    (goth 1.4.2) lib/goth/token.ex:230: Goth.Token.request(%Goth{name: Roadchat.Goth, source: {:service_account, "/Users/sriramkota/Downloads/roadchatapp-firebase-adminsdk-2kwnr-7a5aa2c73b.json", []}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0})
+    (goth 1.4.2) lib/goth.ex:197: Goth.prefetch/1
+    (goth 1.4.2) lib/goth.ex:190: Goth.handle_continue/2
+    (stdlib 5.2) gen_server.erl:1085: :gen_server.try_handle_continue/3
+    (stdlib 5.2) gen_server.erl:995: :gen_server.loop/7
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: {:continue, :async_prefetch}
+State: %Goth{name: Roadchat.Goth, source: {:service_account, "/Users/sriramkota/Downloads/roadchatapp-firebase-adminsdk-2kwnr-7a5aa2c73b.json"}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0}
+10:49:21.717 [error] GenServer {Goth.Registry, Roadchat.Goth} terminating
+** (FunctionClauseError) no function clause matching in Goth.Token.request/1
+    (goth 1.4.2) lib/goth/token.ex:230: Goth.Token.request(%Goth{name: Roadchat.Goth, source: {:service_account, "/Users/sriramkota/Downloads/roadchatapp-firebase-adminsdk-2kwnr-7a5aa2c73b.json", []}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0})
+    (goth 1.4.2) lib/goth.ex:197: Goth.prefetch/1
+    (goth 1.4.2) lib/goth.ex:190: Goth.handle_continue/2
+    (stdlib 5.2) gen_server.erl:1085: :gen_server.try_handle_continue/3
+    (stdlib 5.2) gen_server.erl:995: :gen_server.loop/7
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: {:continue, :async_prefetch}
+State: %Goth{name: Roadchat.Goth, source: {:service_account, "/Users/sriramkota/Downloads/roadchatapp-firebase-adminsdk-2kwnr-7a5aa2c73b.json"}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0}
+10:49:21.718 [error] GenServer {Goth.Registry, Roadchat.Goth} terminating
+** (FunctionClauseError) no function clause matching in Goth.Token.request/1
+    (goth 1.4.2) lib/goth/token.ex:230: Goth.Token.request(%Goth{name: Roadchat.Goth, source: {:service_account, "/Users/sriramkota/Downloads/roadchatapp-firebase-adminsdk-2kwnr-7a5aa2c73b.json", []}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0})
+    (goth 1.4.2) lib/goth.ex:197: Goth.prefetch/1
+    (goth 1.4.2) lib/goth.ex:190: Goth.handle_continue/2
+    (stdlib 5.2) gen_server.erl:1085: :gen_server.try_handle_continue/3
+    (stdlib 5.2) gen_server.erl:995: :gen_server.loop/7
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: {:continue, :async_prefetch}
+State: %Goth{name: Roadchat.Goth, source: {:service_account, "/Users/sriramkota/Downloads/roadchatapp-firebase-adminsdk-2kwnr-7a5aa2c73b.json"}, retry_delay: #Function<4.121530490/1 in Goth.exp_backoff>, http_client: {#Function<3.121530490/1 in Goth.__finch__>, []}, retry_after: nil, refresh_before: 300, max_retries: 10, retries: 0}
+10:49:21.722 [info] Application roadchat exited: shutdown
+11:12:44.771 [info] Application roadchat exited: exited in: Roadchat.Application.start(:normal, [])
+    ** (EXIT) an exception was raised:
+        ** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+            (jason 1.4.1) lib/jason.ex:92: Jason.decode!/2
+            (roadchat 0.1.0) lib/roadchat/application.ex:14: Roadchat.Application.start/2
+            (kernel 9.2) application_master.erl:293: :application_master.start_it_old/4
+11:12:44.776 [info] Application goth exited: :stopped
+11:12:44.776 [info] Application ex_aws_s3 exited: :stopped
+11:12:44.776 [info] Application httpoison exited: :stopped
+11:12:44.776 [info] Application ex_cldr_numbers exited: :stopped
+11:12:44.776 [info] Application digital_token exited: :stopped
+11:12:44.776 [info] Application ex_cldr_currencies exited: :stopped
+11:12:44.776 [info] Application ex_cldr exited: :stopped
+11:12:44.776 [info] Application cldr_utils exited: :stopped
+11:12:44.776 [info] Application ex_unit exited: :stopped
+11:12:44.776 [info] Application timex exited: :stopped
+11:12:44.776 [info] Application combine exited: :stopped
+11:12:44.777 [info] Application tzdata exited: :stopped
+11:12:44.777 [info] Application paginator exited: :stopped
+11:12:44.777 [info] Application geo_postgis exited: :stopped
+11:12:44.777 [info] Application geo exited: :stopped
+11:12:44.777 [info] Application logger_file_backend exited: :stopped
+11:12:44.777 [info] Application guardian exited: :stopped
+11:12:44.778 [info] Application jose exited: :stopped
+11:12:44.778 [info] Application stripity_stripe exited: :stopped
+11:12:44.778 [info] Application uri_query exited: :stopped
+11:12:44.778 [info] Application gettext exited: :stopped
+11:12:44.778 [info] Application expo exited: :stopped
+11:12:44.778 [info] Application telemetry_poller exited: :stopped
+11:12:44.779 [info] Application swoosh exited: :stopped
+11:12:44.779 [info] Application ex_aws exited: :stopped
+11:12:44.779 [info] Application finch exited: :stopped
+11:12:44.779 [info] Application nimble_options exited: :stopped
+11:12:44.779 [info] Application nimble_pool exited: :stopped
+11:12:44.779 [info] Application mint exited: :stopped
+11:12:44.779 [info] Application hpax exited: :stopped
+11:12:44.779 [info] Application hackney exited: :stopped
+11:12:44.779 [info] Application metrics exited: :stopped
+11:12:44.780 [info] Application ssl_verify_fun exited: :stopped
+11:12:44.780 [info] Application parse_trans exited: :stopped
+11:12:44.780 [info] Application syntax_tools exited: :stopped
+11:12:44.780 [info] Application certifi exited: :stopped
+11:12:44.780 [info] Application mimerl exited: :stopped
+11:12:44.780 [info] Application idna exited: :stopped
+11:12:44.780 [info] Application unicode_util_compat exited: :stopped
+11:12:44.780 [info] Application xmerl exited: :stopped
+11:12:44.780 [info] Application tailwind exited: :stopped
+11:12:44.780 [info] Application esbuild exited: :stopped
+11:12:44.780 [info] Application phoenix_live_dashboard exited: :stopped
+11:12:44.780 [info] Application telemetry_metrics exited: :stopped
+11:12:44.780 [info] Application phoenix_live_view exited: :stopped
+11:12:44.781 [info] Application phoenix_live_reload exited: :stopped
+11:12:44.781 [info] Application file_system exited: :stopped
+11:12:44.781 [info] Application ecto_sql exited: :stopped
+11:12:44.781 [info] Application postgrex exited: :stopped
+11:12:44.781 [info] Application db_connection exited: :stopped
+11:12:44.782 [info] Application phoenix_ecto exited: :stopped
+11:12:44.782 [info] Application ecto exited: :stopped
+11:12:44.782 [info] Application phoenix exited: :stopped
+11:12:44.782 [info] Application jason exited: :stopped
+11:12:44.782 [info] Application decimal exited: :stopped
+11:12:44.782 [info] Application castore exited: :stopped
+11:12:44.782 [info] Application websock_adapter exited: :stopped
+11:12:44.782 [info] Application plug_cowboy exited: :stopped
+11:12:44.782 [info] Application cowboy_telemetry exited: :stopped
+11:12:44.782 [info] Application cowboy exited: :stopped
+11:12:44.783 [info] Application ranch exited: :stopped
+11:12:44.783 [info] Application cowlib exited: :stopped
+11:12:44.783 [info] Application websock exited: :stopped
+11:12:44.783 [info] Application phoenix_template exited: :stopped
+11:12:44.783 [info] Application phoenix_html exited: :stopped
+11:12:44.783 [info] Application phoenix_pubsub exited: :stopped
+11:12:44.783 [info] Application plug exited: :stopped
+11:12:44.783 [info] Application telemetry exited: :stopped
+11:12:44.783 [info] Application plug_crypto exited: :stopped
+11:12:44.784 [info] Application mime exited: :stopped
+11:12:44.784 [info] Application eex exited: :stopped
+11:12:44.784 [info] Application bcrypt_elixir exited: :stopped
+11:12:44.784 [info] Application comeonin exited: :stopped
+11:12:44.784 [info] Application runtime_tools exited: :stopped
+11:17:16.688 [info] Application roadchat exited: exited in: Roadchat.Application.start(:normal, [])
+    ** (EXIT) an exception was raised:
+        ** (Jason.DecodeError) unexpected byte at position 0: 0x2F ("/")
+            (jason 1.4.1) lib/jason.ex:92: Jason.decode!/2
+            (roadchat 0.1.0) lib/roadchat/application.ex:15: Roadchat.Application.start/2
+            (kernel 9.2) application_master.erl:293: :application_master.start_it_old/4
+11:17:16.693 [info] Application goth exited: :stopped
+11:17:16.693 [info] Application ex_aws_s3 exited: :stopped
+11:17:16.693 [info] Application httpoison exited: :stopped
+11:17:16.693 [info] Application ex_cldr_numbers exited: :stopped
+11:17:16.693 [info] Application digital_token exited: :stopped
+11:17:16.693 [info] Application ex_cldr_currencies exited: :stopped
+11:17:16.693 [info] Application ex_cldr exited: :stopped
+11:17:16.693 [info] Application cldr_utils exited: :stopped
+11:17:16.693 [info] Application ex_unit exited: :stopped
+11:17:16.694 [info] Application timex exited: :stopped
+11:17:16.694 [info] Application combine exited: :stopped
+11:17:16.694 [info] Application tzdata exited: :stopped
+11:17:16.694 [info] Application paginator exited: :stopped
+11:17:16.694 [info] Application geo_postgis exited: :stopped
+11:17:16.694 [info] Application geo exited: :stopped
+11:17:16.695 [info] Application logger_file_backend exited: :stopped
+11:17:16.695 [info] Application guardian exited: :stopped
+11:17:16.695 [info] Application jose exited: :stopped
+11:17:16.695 [info] Application stripity_stripe exited: :stopped
+11:17:16.695 [info] Application uri_query exited: :stopped
+11:17:16.695 [info] Application gettext exited: :stopped
+11:17:16.695 [info] Application expo exited: :stopped
+11:17:16.695 [info] Application telemetry_poller exited: :stopped
+11:17:16.696 [info] Application swoosh exited: :stopped
+11:17:16.696 [info] Application ex_aws exited: :stopped
+11:17:16.696 [info] Application finch exited: :stopped
+11:17:16.696 [info] Application nimble_options exited: :stopped
+11:17:16.696 [info] Application nimble_pool exited: :stopped
+11:17:16.696 [info] Application mint exited: :stopped
+11:17:16.697 [info] Application hpax exited: :stopped
+11:17:16.697 [info] Application hackney exited: :stopped
+11:17:16.697 [info] Application metrics exited: :stopped
+11:17:16.697 [info] Application ssl_verify_fun exited: :stopped
+11:17:16.697 [info] Application parse_trans exited: :stopped
+11:17:16.697 [info] Application syntax_tools exited: :stopped
+11:17:16.697 [info] Application certifi exited: :stopped
+11:17:16.697 [info] Application mimerl exited: :stopped
+11:17:16.697 [info] Application idna exited: :stopped
+11:17:16.697 [info] Application unicode_util_compat exited: :stopped
+11:17:16.697 [info] Application xmerl exited: :stopped
+11:17:16.697 [info] Application tailwind exited: :stopped
+11:17:16.697 [info] Application esbuild exited: :stopped
+11:17:16.697 [info] Application phoenix_live_dashboard exited: :stopped
+11:17:16.697 [info] Application telemetry_metrics exited: :stopped
+11:17:16.698 [info] Application phoenix_live_view exited: :stopped
+11:17:16.698 [info] Application phoenix_live_reload exited: :stopped
+11:17:16.698 [info] Application file_system exited: :stopped
+11:17:16.698 [info] Application ecto_sql exited: :stopped
+11:17:16.698 [info] Application postgrex exited: :stopped
+11:17:16.699 [info] Application db_connection exited: :stopped
+11:17:16.699 [info] Application phoenix_ecto exited: :stopped
+11:17:16.699 [info] Application ecto exited: :stopped
+11:17:16.699 [info] Application phoenix exited: :stopped
+11:17:16.699 [info] Application jason exited: :stopped
+11:17:16.699 [info] Application decimal exited: :stopped
+11:17:16.699 [info] Application castore exited: :stopped
+11:17:16.699 [info] Application websock_adapter exited: :stopped
+11:17:16.699 [info] Application plug_cowboy exited: :stopped
+11:17:16.699 [info] Application cowboy_telemetry exited: :stopped
+11:17:16.700 [info] Application cowboy exited: :stopped
+11:17:16.700 [info] Application ranch exited: :stopped
+11:17:16.700 [info] Application cowlib exited: :stopped
+11:17:16.700 [info] Application websock exited: :stopped
+11:17:16.700 [info] Application phoenix_template exited: :stopped
+11:17:16.700 [info] Application phoenix_html exited: :stopped
+11:17:16.700 [info] Application phoenix_pubsub exited: :stopped
+11:17:16.700 [info] Application plug exited: :stopped
+11:17:16.701 [info] Application telemetry exited: :stopped
+11:17:16.701 [info] Application plug_crypto exited: :stopped
+11:17:16.701 [info] Application mime exited: :stopped
+11:17:16.701 [info] Application eex exited: :stopped
+11:17:16.701 [info] Application bcrypt_elixir exited: :stopped
+11:17:16.701 [info] Application comeonin exited: :stopped
+11:17:16.701 [info] Application runtime_tools exited: :stopped
+11:22:28.560 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+11:22:28.562 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+11:25:42.670 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+11:25:42.672 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+11:28:45.072 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+11:28:45.074 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+11:30:08.049 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+11:30:08.051 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+11:49:04.336 [info] GET /api/v1/posts
+11:49:04.336 [info] POST /api/v1/devicetoken
+11:49:04.374 [info] Sent 200 in 38ms
+11:49:04.380 [info] Sent 200 in 44ms
+11:52:03.471 [info] POST /api/v1/updategeo
+11:52:03.532 [info] Sent 500 in 61ms
+11:52:03.533 [error] #PID<0.697.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.696.0>, stream id 1) terminated
+Server: a7e8-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/updategeo
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42P01 (undefined_table) relation "loggedin_users" does not exist
+
+    query: SELECT l0."id", l0."user_id", l0."logged_in", l0."current_position", l0."inserted_at", l0."updated_at" FROM "loggedin_users" AS l0 WHERE (l0."user_id" = $1)
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:69: RoadchatWeb.API.V1.LoggedinUsersController.update_geo_position/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+11:55:03.448 [info] POST /api/v1/updategeo
+11:55:03.479 [info] Sent 500 in 31ms
+11:55:03.480 [error] #PID<0.738.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.737.0>, stream id 1) terminated
+Server: a7e8-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/updategeo
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42P01 (undefined_table) relation "loggedin_users" does not exist
+
+    query: SELECT l0."id", l0."user_id", l0."logged_in", l0."current_position", l0."inserted_at", l0."updated_at" FROM "loggedin_users" AS l0 WHERE (l0."user_id" = $1)
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:69: RoadchatWeb.API.V1.LoggedinUsersController.update_geo_position/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+11:58:03.284 [info] POST /api/v1/updategeo
+11:58:03.316 [info] Sent 500 in 31ms
+11:58:03.316 [error] #PID<0.777.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.776.0>, stream id 1) terminated
+Server: a7e8-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/updategeo
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42P01 (undefined_table) relation "loggedin_users" does not exist
+
+    query: SELECT l0."id", l0."user_id", l0."logged_in", l0."current_position", l0."inserted_at", l0."updated_at" FROM "loggedin_users" AS l0 WHERE (l0."user_id" = $1)
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:69: RoadchatWeb.API.V1.LoggedinUsersController.update_geo_position/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+12:04:03.557 [info] POST /api/v1/updategeo
+12:04:03.591 [info] Sent 500 in 33ms
+12:04:03.591 [error] #PID<0.818.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.817.0>, stream id 1) terminated
+Server: a7e8-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/updategeo
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42P01 (undefined_table) relation "loggedin_users" does not exist
+
+    query: SELECT l0."id", l0."user_id", l0."logged_in", l0."current_position", l0."inserted_at", l0."updated_at" FROM "loggedin_users" AS l0 WHERE (l0."user_id" = $1)
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:69: RoadchatWeb.API.V1.LoggedinUsersController.update_geo_position/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+12:07:03.465 [info] POST /api/v1/updategeo
+12:07:03.512 [info] Sent 500 in 47ms
+12:07:03.513 [error] #PID<0.859.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.858.0>, stream id 1) terminated
+Server: a7e8-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/updategeo
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42P01 (undefined_table) relation "loggedin_users" does not exist
+
+    query: SELECT l0."id", l0."user_id", l0."logged_in", l0."current_position", l0."inserted_at", l0."updated_at" FROM "loggedin_users" AS l0 WHERE (l0."user_id" = $1)
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:69: RoadchatWeb.API.V1.LoggedinUsersController.update_geo_position/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+12:10:03.382 [info] POST /api/v1/updategeo
+12:10:03.413 [info] Sent 500 in 30ms
+12:10:03.413 [error] #PID<0.898.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.897.0>, stream id 1) terminated
+Server: a7e8-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/updategeo
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42P01 (undefined_table) relation "loggedin_users" does not exist
+
+    query: SELECT l0."id", l0."user_id", l0."logged_in", l0."current_position", l0."inserted_at", l0."updated_at" FROM "loggedin_users" AS l0 WHERE (l0."user_id" = $1)
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:69: RoadchatWeb.API.V1.LoggedinUsersController.update_geo_position/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+12:13:03.396 [info] POST /api/v1/updategeo
+12:13:03.428 [info] Sent 500 in 31ms
+12:13:03.428 [error] #PID<0.938.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.937.0>, stream id 1) terminated
+Server: a7e8-74-88-60-110.ngrok-free.app:80 (http)
+Request: POST /api/v1/updategeo
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42P01 (undefined_table) relation "loggedin_users" does not exist
+
+    query: SELECT l0."id", l0."user_id", l0."logged_in", l0."current_position", l0."inserted_at", l0."updated_at" FROM "loggedin_users" AS l0 WHERE (l0."user_id" = $1)
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:1047: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (ecto_sql 3.10.2) lib/ecto/adapters/sql.ex:945: Ecto.Adapters.SQL.execute/6
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:229: Ecto.Repo.Queryable.execute/4
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:19: Ecto.Repo.Queryable.all/3
+        (ecto 3.10.3) lib/ecto/repo/queryable.ex:151: Ecto.Repo.Queryable.one/3
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:69: RoadchatWeb.API.V1.LoggedinUsersController.update_geo_position/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.action/2
+        (roadchat 0.1.0) lib/roadchat_web/controllers/api/v1/loggedin_users_controllers.ex:1: RoadchatWeb.API.V1.LoggedinUsersController.phoenix_controller_pipeline/2
+        (phoenix 1.7.7) lib/phoenix/router.ex:430: Phoenix.Router.__call__/5
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.plug_builder_call/2
+        (roadchat 0.1.0) deps/plug/lib/plug/debugger.ex:136: RoadchatWeb.Endpoint."call (overridable 3)"/2
+        (roadchat 0.1.0) lib/roadchat_web/endpoint.ex:1: RoadchatWeb.Endpoint.call/2
+        (phoenix 1.7.7) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.6.1) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /Users/sriramkota/dev/phoenix_stuff/roadchat/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+13:44:02.545 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+13:44:02.548 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+13:44:10.659 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+13:44:10.662 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+13:45:02.349 [info] POST /api/v1/devicetoken
+13:45:02.349 [info] GET /api/v1/posts
+13:45:02.389 [info] Sent 200 in 39ms
+13:45:02.393 [info] Sent 200 in 43ms
+18:45:56.999 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.611.0>): {:get_user}
+State: 0
+Client #PID<0.611.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:58: Roadchat.Repos.GeoLocation.get_user_contacts_for_chat/0
+    (roadchat 0.1.0) lib/roadchat/servers/load_contacts.ex:27: Roadchat.Servers.LoadContacts.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+18:45:57.014 [error] GenServer #PID<0.611.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:58: Roadchat.Repos.GeoLocation.get_user_contacts_for_chat/0
+    (roadchat 0.1.0) lib/roadchat/servers/load_contacts.ex:27: Roadchat.Servers.LoadContacts.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+20:20:10.046 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+20:20:10.048 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+20:20:38.710 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+20:20:38.712 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+20:20:50.487 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+20:20:50.489 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+20:21:30.027 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+20:21:30.029 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+20:25:30.052 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.656.0>): {:get_user}
+State: 0
+Client #PID<0.656.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+20:25:30.068 [error] GenServer #PID<0.656.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+20:29:30.076 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.680.0>): {:get_user}
+State: 0
+Client #PID<0.680.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+20:29:30.079 [error] GenServer #PID<0.680.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+20:31:06.400 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+20:31:06.404 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+20:32:28.755 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+20:32:28.756 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+20:35:35.759 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+20:35:35.760 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+20:39:35.769 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.1246.0>): {:get_user}
+State: 0
+Client #PID<0.1246.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+20:39:35.789 [error] GenServer #PID<0.1246.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+20:41:05.830 [info] Running RoadchatWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+20:41:05.833 [info] Access RoadchatWeb.Endpoint at http://localhost:4000
+20:45:05.852 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.611.0>): {:get_user}
+State: 0
+Client #PID<0.611.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+20:45:05.867 [error] GenServer #PID<0.611.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+20:59:03.259 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.645.0>): {:get_user}
+State: 0
+Client #PID<0.645.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+20:59:03.267 [error] GenServer #PID<0.645.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+21:03:03.271 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.649.0>): {:get_user}
+State: 0
+Client #PID<0.649.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+21:03:03.274 [error] GenServer #PID<0.649.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+21:07:03.279 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.653.0>): {:get_user}
+State: 0
+Client #PID<0.653.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+21:07:03.284 [error] GenServer #PID<0.653.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+21:17:34.044 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.657.0>): {:get_user}
+State: 0
+Client #PID<0.657.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+21:17:34.048 [error] GenServer #PID<0.657.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+21:21:34.051 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.661.0>): {:get_user}
+State: 0
+Client #PID<0.661.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+21:21:34.053 [error] GenServer #PID<0.661.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+21:25:34.061 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.665.0>): {:get_user}
+State: 0
+Client #PID<0.665.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+21:25:34.063 [error] GenServer #PID<0.665.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+21:29:34.065 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.669.0>): {:get_user}
+State: 0
+Client #PID<0.669.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+21:29:34.068 [error] GenServer #PID<0.669.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+03:23:53.858 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.673.0>): {:get_user}
+State: 0
+Client #PID<0.673.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+03:23:53.863 [error] GenServer #PID<0.673.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+08:22:49.087 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.677.0>): {:get_user}
+State: 0
+Client #PID<0.677.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+08:22:49.088 [error] GenServer #PID<0.677.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:02:17.649 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.681.0>): {:get_user}
+State: 0
+Client #PID<0.681.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:02:17.654 [error] GenServer #PID<0.681.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:06:17.659 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.685.0>): {:get_user}
+State: 0
+Client #PID<0.685.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:06:17.662 [error] GenServer #PID<0.685.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:10:17.667 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.689.0>): {:get_user}
+State: 0
+Client #PID<0.689.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:10:17.671 [error] GenServer #PID<0.689.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:14:17.675 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.693.0>): {:get_user}
+State: 0
+Client #PID<0.693.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:14:17.677 [error] GenServer #PID<0.693.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:18:17.681 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.701.0>): {:get_user}
+State: 0
+Client #PID<0.701.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:18:17.685 [error] GenServer #PID<0.701.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:22:17.690 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.705.0>): {:get_user}
+State: 0
+Client #PID<0.705.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:22:17.692 [error] GenServer #PID<0.705.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:26:17.697 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.709.0>): {:get_user}
+State: 0
+Client #PID<0.709.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:26:17.702 [error] GenServer #PID<0.709.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:30:17.674 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.713.0>): {:get_user}
+State: 0
+Client #PID<0.713.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:30:17.677 [error] GenServer #PID<0.713.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:34:17.682 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.717.0>): {:get_user}
+State: 0
+Client #PID<0.717.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:34:17.686 [error] GenServer #PID<0.717.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:38:17.692 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.721.0>): {:get_user}
+State: 0
+Client #PID<0.721.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:38:17.696 [error] GenServer #PID<0.721.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:44:56.852 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.725.0>): {:get_user}
+State: 0
+Client #PID<0.725.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:44:56.856 [error] GenServer #PID<0.725.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:49:23.569 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.729.0>): {:get_user}
+State: 0
+Client #PID<0.729.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:49:23.573 [error] GenServer #PID<0.729.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:53:23.577 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.733.0>): {:get_user}
+State: 0
+Client #PID<0.733.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:53:23.581 [error] GenServer #PID<0.733.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+09:57:23.585 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.737.0>): {:get_user}
+State: 0
+Client #PID<0.737.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+09:57:23.589 [error] GenServer #PID<0.737.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+10:01:23.594 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.741.0>): {:get_user}
+State: 0
+Client #PID<0.741.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+10:01:23.598 [error] GenServer #PID<0.741.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+10:05:23.603 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.745.0>): {:get_user}
+State: 0
+Client #PID<0.745.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+10:05:23.605 [error] GenServer #PID<0.745.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+10:09:23.609 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.749.0>): {:get_user}
+State: 0
+Client #PID<0.749.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+10:09:23.612 [error] GenServer #PID<0.749.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+10:13:23.616 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.753.0>): {:get_user}
+State: 0
+Client #PID<0.753.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+10:13:23.617 [error] GenServer #PID<0.753.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+10:17:23.627 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.761.0>): {:get_user}
+State: 0
+Client #PID<0.761.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+10:17:23.630 [error] GenServer #PID<0.761.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+10:21:23.361 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.610.0>): {:get_user}
+State: 0
+Client #PID<0.610.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:63: Roadchat.Repos.GeoLocation.get_user_contacts_for_chat/0
+    (roadchat 0.1.0) lib/roadchat/servers/load_contacts.ex:27: Roadchat.Servers.LoadContacts.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+10:21:23.364 [error] GenServer #PID<0.610.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:63: Roadchat.Repos.GeoLocation.get_user_contacts_for_chat/0
+    (roadchat 0.1.0) lib/roadchat/servers/load_contacts.ex:27: Roadchat.Servers.LoadContacts.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+10:21:23.624 [error] GenServer Roadchat.Servers.UserStateServer terminating
+** (MatchError) no match of right hand side value: 0
+    (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+    (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+    (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message (from #PID<0.765.0>): {:get_user}
+State: 0
+Client #PID<0.765.0> is alive
+
+    (stdlib 5.2) gen.erl:259: :gen.do_call/4
+    (elixir 1.16.0) lib/gen_server.ex:1111: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+10:21:23.626 [error] GenServer #PID<0.765.0> terminating
+** (stop) exited in: GenServer.call(Roadchat.Servers.UserStateServer, {:get_user}, 5000)
+    ** (EXIT) an exception was raised:
+        ** (MatchError) no match of right hand side value: 0
+            (roadchat 0.1.0) lib/roadchat/servers/user_state_server.ex:38: Roadchat.Servers.UserStateServer.handle_call/3
+            (stdlib 5.2) gen_server.erl:1131: :gen_server.try_handle_call/4
+            (stdlib 5.2) gen_server.erl:1160: :gen_server.handle_msg/6
+            (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+    (elixir 1.16.0) lib/gen_server.ex:1114: GenServer.call/3
+    (roadchat 0.1.0) lib/roadchat/repos/geolocation.ex:26: Roadchat.Repos.GeoLocation.get_distance_between_points/0
+    (roadchat 0.1.0) lib/roadchat/servers/user_proximity.ex:17: Roadchat.Servers.UserProximity.handle_info/2
+    (stdlib 5.2) gen_server.erl:1095: :gen_server.try_handle_info/3
+    (stdlib 5.2) gen_server.erl:1183: :gen_server.handle_msg/6
+    (stdlib 5.2) proc_lib.erl:241: :proc_lib.init_p_do_apply/3
+Last message: :work
+State: %{}
+10:21:23.653 [info] Application roadchat exited: shutdown

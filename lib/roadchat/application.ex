@@ -7,6 +7,16 @@ defmodule Roadchat.Application do
 
   @impl true
   def start(_type, _args) do
+
+    # credentials = File.read!("/Users/sriramkota/Downloads/roadchatapp-firebase-adminsdk-2kwnr-7a5aa2c73b.json")
+    # |> Jason.decode!()
+    credentials ="GOOGLE_APPLICATION_CREDENTIALS_JSON"
+      |> System.fetch_env!()
+      |> File.read!()
+      |> Jason.decode!()
+
+    source = {:service_account, credentials}
+
     children = [
       # Start the Telemetry supervisor
       RoadchatWeb.Telemetry,
@@ -22,6 +32,8 @@ defmodule Roadchat.Application do
       {Roadchat.Servers.UserStateServer, %{}},
       {Roadchat.Servers.UserContactStateServer, %{}},
       {Roadchat.Servers.LoadContacts, %{}},
+      {Roadchat.Servers.UserProximity, %{}},
+      {Goth, name: Roadchat.Goth, source: source}
       # {Roadchat.Servers.ClearUserLocations, %{}},
       # Start a worker by calling: Roadchat.Worker.start_link(arg)
       # {Roadchat.Worker, arg}

@@ -2,7 +2,8 @@ defmodule Roadchat.Repos.GeoLocation do
   alias Roadchat.Repo
   import Ecto.Query
   alias Roadchat.Schemas.UserLocation
-  alias Roadchat.Servers.UserStateServer
+  alias Roadchat.Servers.{UserStateServer, UserContactStateServer}
+  alias Roadchat.Notifications
 
   # get current user geo location from user_location
   def get_location_by_user(user_id) do
@@ -23,7 +24,9 @@ defmodule Roadchat.Repos.GeoLocation do
 
   def get_distance_between_points() do
     id = UserStateServer.get_user()
-    match_ids = UserStateServer.get_chat_list()
+    match_ids = UserContactStateServer.get_chat_list()
+
+    current_user = Accounts.get_user!(id)
 
     if !is_nil(id) && Enum.count(match_ids) > 0 do
       query = "select
@@ -36,6 +39,7 @@ defmodule Roadchat.Repos.GeoLocation do
             where
               a.user_id <> hr_jax.user_id and
               a.user_id= ANY($2) and
+              ST_Distance(a.geom, hr_jax.geom, true) >= 1000 and
               ST_Distance(a.geom, hr_jax.geom, true) <= 2000
             order by distance;"
 
@@ -44,11 +48,12 @@ defmodule Roadchat.Repos.GeoLocation do
       Enum.map(results.rows, fn result ->
         [id, distance]  = result
         %{"id" => id, "distance" => distance}
-      end)
+        # send notification
+        contact = Accounts.get_user!(id)
+        message =  "hello #{current_user.fname}, #{contact.fname} just passed by."
+        Notifications.send_message(current_user.device_token, message)
 
-    # next filter items where distance = 0
-    # lastly send notification
-    
+      end)
     end
   end
 

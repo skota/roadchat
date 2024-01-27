@@ -1,110 +1,111 @@
+build
+  git reset --hard HEAD && git pull
+  mix deps.get --only prod && MIX_ENV=prod mix compile 
+  
+  if there is a package.json
+    npm install --prefix assets && npm run deploy --prefix assets && mix phx.digest && MIX_ENV=prod mix release
+  else  
+    MIX_ENV=prod mix phx.digest && MIX_ENV=prod mix assets.deploy && MIX_ENV=prod mix release
 
+  scp -r _build/prod/rel/roadchat web@68.183.97.47:/home/web
 
- HTTPoison.get! "https://postman-echo.com/get"   
+  PHX_SERVER=true bin/roadchat start
 
- http://www.google.com/search?q=
- HTTPoison.get! "http://www.google.com/search?q=+rfp+web&as_qdr=m&as_filetype=pdf"
+  # regen SECRET_KEY_BASE
+  export DATABASE_URL=ecto://roadchat:3GlUG0r6120@localhost/roadchat_prod
+  export SECRET_KEY_BASE=pbUQF6j8wPZGUfel9BxdwBeBYFPY6zKG2BnSgYwOfmves/Gwc7OuKhlH8lkWIIYQ
 
- https://www.linkedin.com/search/results/content/?keywords=web+rfp
- https://www.google.com/search?q=+best+web+job+boards
+db 
+  postgres/HvqGHPFuNcF812   - dba
+  roadchat/3GlUG0r6120   - db user
 
- https://www.google.com/search?q=site:*.workable.com+Remote+web&as_qdr=m
+  sudo systemctl start postgresql.service
+  sudo su postgres  -- to swict to postgres, then psql
 
+  psql$ alter user postgres with password 'HvqGHPFuNcF812';
+  psql$ create database roadchat_prod;
+  psql$ create user roadchat with encrypted password '3GlUG0r6120';
+  psql$ grant all privileges on database roadchat_prod to eryn;
 
- Ecto.Changeset.traverse_errors(changeset, fn {msg, opts} -> \
-  Regex.replace(~r"%{(\w+)}", msg, fn _, key -> \
-    opts |> Keyword.get(String.to_existing_atom(key), key) |> to_string() \
-  end) \
-end)
-
+ 
 local user accounts
--  sriram.kota@gmail.com / Secret123
+  -  sriram.kota@gmail.com / Secret123
 
 -- Stripe stuff -------------------
-https://www.stibbard.io/elixir-phoenix-stripe-checkout
-https://gist.github.com/nicolasblanco/0b954cbcdbc98d98fa3d93522241bb83
+  https://www.stibbard.io/elixir-phoenix-stripe-checkout
+  https://gist.github.com/nicolasblanco/0b954cbcdbc98d98fa3d93522241bb83
 
-https://staknine.com/stripe-checkout-for-elixir-phoenix/#build-your-checkout
+  https://staknine.com/stripe-checkout-for-elixir-phoenix/#build-your-checkout
 
-show form to collect card details - send to stripe 
-https://stripe.com/docs/payments/accept-a-payment-deferred
+  show form to collect card details - send to stripe 
+    https://stripe.com/docs/payments/accept-a-payment-deferred
 
 
 TODO:
-  BE
-    endpoint- /api/v1/getcontacts
-
-https://tech.julienkarst.com/How-to-display-time-ago-from-a-date-in-Swift-(This-is-how-to-get-the-difference-between-two-dates-in-a-string)
-
+  https://tech.julienkarst.com/How-to-display-time-ago-from-a-date-in-Swift-(This-is-how-to-get-the-difference-between-two-dates-in-a-string)
 
 
 ---------- TODO
 volunteer oppo
 
-https://www.catchafire.org/volunteer/123106/south-asian-american-digital-archive--saada---flexible-tech-support/
-
-https://www.catchafire.org/volunteer/122742/goodfellas-impact-coalition---board-prospecting/
-
-https://www.catchafire.org/volunteer/122967/archmere-academy--tech-systems/
-
-https://www.catchafire.org/volunteer/123147/uplift-solutions--website/
-
-https://www.catchafire.org/volunteer/123255/sprouting-farms--website/   1 hr call
-https://www.catchafire.org/volunteer/123232/kirkwood-children-s-chorale-dba-crescendo-youth-choirs--website/
-  - 1 hr call
+  https://www.catchafire.org/volunteer/123106/south-asian-american-digital-archive--saada---flexible-tech-support/
+  https://www.catchafire.org/volunteer/122742/goodfellas-impact-coalition---board-prospecting/
+  https://www.catchafire.org/volunteer/122967/archmere-academy--tech-systems/
+  https://www.catchafire.org/volunteer/123147/uplift-solutions--website/
+  https://www.catchafire.org/volunteer/123255/sprouting-farms--website/   1 hr call
+  https://www.catchafire.org/volunteer/123232/kirkwood-children-s-chorale-dba-crescendo-youth-choirs--website/
+    - 1 hr call
 
   https://www.catchafire.org/volunteer/123088/coosa-river-basin-initiative-upper-coosa-riverkeeper--website-audit/
 
-https://www.catchafire.org/volunteer/123278/sil-columbia--online-survey/
-for sasha?
-https://www.catchafire.org/volunteer/122578/literacy-inc---video-editing/
+  https://www.catchafire.org/volunteer/123278/sil-columbia--online-survey/
+  for sasha?
+  https://www.catchafire.org/volunteer/122578/literacy-inc---video-editing/
 
-https://www.catchafire.org/volunteer/123231/unintentional-purpose-inc--website-minor-update/
-  wordpress
+  https://www.catchafire.org/volunteer/123231/unintentional-purpose-inc--website-minor-update/
+    wordpress
 
-https://www.catchafire.org/volunteer/122970/ocean-blue-project--inc--flexible-web-development-support/
-  help with mobile app
+  https://www.catchafire.org/volunteer/122970/ocean-blue-project--inc--flexible-web-development-support/
+    help with mobile app
 
-https://www.catchafire.org/volunteer/123189/kijiji-afrika--data-collection-plan/
-  - asking for help with data analysis in excel...
+  https://www.catchafire.org/volunteer/123189/kijiji-afrika--data-collection-plan/
+    - asking for help with data analysis in excel...
 
-https://www.catchafire.org/volunteer/123168/cambio-labs--website-major-update/
-  - wdpress?
+  https://www.catchafire.org/volunteer/123168/cambio-labs--website-major-update/
+    - wdpress?
 
-https://www.catchafire.org/volunteer/123105/a-better-road-foundation-inc--website-major-update/
-  - what exactly do they need help with?
+  https://www.catchafire.org/volunteer/123105/a-better-road-foundation-inc--website-major-update/
+    - what exactly do they need help with?
 
-https://www.catchafire.org/volunteer/123096/indonesian-community-connect--data-collection-plan/
-  - data collection with excel
-https://www.catchafire.org/volunteer/123097/indonesian-community-connect--customer-database--crm--set-up/
-  - crm with wix?
+  https://www.catchafire.org/volunteer/123096/indonesian-community-connect--data-collection-plan/
+    - data collection with excel
+  https://www.catchafire.org/volunteer/123097/indonesian-community-connect--customer-database--crm--set-up/
+    - crm with wix?
 
-https://www.catchafire.org/volunteer/122987/riverdale-ymwha--customer-database--crm--set-up/
-  - another crm project - looks like users just pick requirements.most ofthem look same
-  - better impact seems expensive?
+  https://www.catchafire.org/volunteer/122987/riverdale-ymwha--customer-database--crm--set-up/
+    - another crm project - looks like users just pick requirements.most ofthem look same
+    - better impact seems expensive?
 
-https://www.catchafire.org/volunteer/121028/new-york-city-outward-bound--flexible-tech-support/
-  - need help with integrating  monday.com with google suite, what exactly are they using it for?
+  https://www.catchafire.org/volunteer/121028/new-york-city-outward-bound--flexible-tech-support/
+    - need help with integrating  monday.com with google suite, what exactly are they using it for?
 
-https://www.catchafire.org/volunteer/122802/beyond-plastic--tech-systems/
-  - need help with systems sec audit
+  https://www.catchafire.org/volunteer/122802/beyond-plastic--tech-systems/
+    - need help with systems sec audit
 
-https://www.catchafire.org/volunteer/122758/inncuvate-community-development-partners---inc---flexible-web-development-support/
-  - notion page design
+  https://www.catchafire.org/volunteer/122758/inncuvate-community-development-partners---inc---flexible-web-development-support/
+    - notion page design
 
-https://www.catchafire.org/volunteer/122678/c-a-r-e--clinic--website-major-update/
-  - migrate from wix to wordpress...will there be a paid option?
+  https://www.catchafire.org/volunteer/122678/c-a-r-e--clinic--website-major-update/
+    - migrate from wix to wordpress...will there be a paid option?
 
-https://www.catchafire.org/volunteer/122672/healing-schools-project--customer-database--crm--audit/
-  - have a basic system setup with airtable...want to improve it    
+  https://www.catchafire.org/volunteer/122672/healing-schools-project--customer-database--crm--audit/
+    - have a basic system setup with airtable...want to improve it    
 
-https://www.catchafire.org/volunteer/120751/american-gateways--tech-systems/
-  - help with expense management syste
+  https://www.catchafire.org/volunteer/120751/american-gateways--tech-systems/
+    - help with expense management syste
 
-https://www.catchafire.org/volunteer/121604/open-doors-outdoors--inc---flexible-web-development-support/
-  - help with website  
-
---------
+  https://www.catchafire.org/volunteer/121604/open-doors-outdoors--inc---flexible-web-development-support/
+    - help with website  
 
 Test data
     {:ok, dt1} =  NaiveDateTime.new(~D[2024-01-09], ~T[23:00:07.005])
@@ -118,55 +119,45 @@ Test data
 
 
 --- devicecheck
-keyId: 9PSF273TD9
+  keyId: 9PSF273TD9
 
 -- roadchatapns
-keyId: Q434UZ2BV3
+  keyId: Q434UZ2BV3
+  ===== ###### ################
+  Debug token do not delete
+  C7181D9E-4EB7-4F01-848E-9365494E34E4
 
 
-===== ###### ################
-Debug token do not delete
-C7181D9E-4EB7-4F01-848E-9365494E34E4
+  {:ok, dt1 } = NaiveDateTime.from_iso8601("2024-01-13 00:00:00")
+  {:ok, dt2 } = NaiveDateTime.from_iso8601("2024-01-13 00:00:00")
 
+  dt1 = ~U[2024-01-14 00:52:36.273229Z]
+  dt2 = ~U[2024-01-14 00:52:41.248541Z]
 
-{:ok, dt1 } = NaiveDateTime.from_iso8601("2024-01-13 00:00:00")
-{:ok, dt2 } = NaiveDateTime.from_iso8601("2024-01-13 00:00:00")
+  contact1 = %{contact_with_user_id: 99, user_id: "66"}
+  contact2 = %{contact_with_user_id: 66, user_id: "99"}
 
-dt1 = ~U[2024-01-14 00:52:36.273229Z]
-dt2 = ~U[2024-01-14 00:52:41.248541Z]
+  =======
 
-contact1 = %{contact_with_user_id: 99, user_id: "66"}
-contact2 = %{contact_with_user_id: 66, user_id: "99"}
+  dt1 = NaiveDateTime.local_now()
+  dt2 = NaiveDateTime.local_now()
+  dtt = DateTime.utc_now()
+  dtc = DateTime.truncate(dtt, :second)
 
-=======
-
-dt1 = NaiveDateTime.local_now()
-dt2 = NaiveDateTime.local_now()
-dtt = DateTime.utc_now()
-dtc = DateTime.truncate(dtt, :second)
-
-chats = [%{last_message: "start chat now", user_id: 100, chat_with_user_id: 101, last_message_datetime: dt1, inserted_at: dtc, updated_at: dtc},
-          %{last_message: "start chat now", user_id: 101, chat_with_user_id: 100, last_message_datetime: dt2, inserted_at: dtc, updated_at: dtc}]
+  chats = [%{last_message: "start chat now", user_id: 100, chat_with_user_id: 101, last_message_datetime: dt1, inserted_at: dtc, updated_at: dtc},
+            %{last_message: "start chat now", user_id: 101, chat_with_user_id: 100, last_message_datetime: dt2, inserted_at: dtc, updated_at: dtc}]
 
 TODO ---------------------------------------
-
   APP 
-    - Add push notifications entitlement
-    - review firebase setup for push notifications
+    - review firebase setup for push notifications (dev works. add prod)
     - Splash screen
 
   BE  
-
-    - is sendgrid configured for roadchat
+    - sendgrid works, but need an email info@roadchatapp.com
     - password reset 
-
-    - update geo and of distance is less than mile, send push notification,
-      look at old repo?
-
     - delete traille server
 
     - reinstall it on soundscibe later
-    - change dns to point roadchat to soundscribe
       - update soundscribe (linux )server packages
       - create database for roadchat
       - create Nginx virutal site for app.roadchat.com
@@ -175,38 +166,29 @@ TODO ---------------------------------------
       - build and deploy roadchat archive to server
       - run migrations
       - Test
-  
-  App store    
-    - put on test flight and test locally
-    - then send to ravi
-    - submit app for review
-
-  - practise nextjs
-
 ----
 
   GEO - 
     home - (lat) 41.190310, (lon) -73.217830
     2145 north ave-  (lat) 41.180000, (lon) -73.212440 
 
-  APP: figure out a way to geo points as floats instead of string
-
-  - I now have a genserver that holds userid and user contacts
-  - now complete the genserver to load user chat contacts (every 2 hrs)
-  - and the genserver tha checks if user contacts are in proximity (every 5 mins)
-    = calc distance
-    = send push notifications
-
   String.to_float("-12.35456000")
 
   Back to genservers
-    - figure out how to send push notification 
+   - search for users in range
+    - when a contact is within range, send notification to current user: 
 
 
 
+send push notification via rest
+https://firebase.google.com/docs/cloud-messaging/send-message?authuser=0#rest
+
+ - POST https://fcm.googleapis.com/v1/projects/roadchatapp-548575092126/messages:send
+
+ Oauth
+  use goth (https://github.com/peburrows/goth) 
+  ensure there is a folder - ~/.config/gcloud/application_default_credentials.json
 
   
-
-
 
 

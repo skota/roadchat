@@ -20,6 +20,16 @@ if System.get_env("PHX_SERVER") do
   config :roadchat, RoadchatWeb.Endpoint, server: true
 end
 
+sendgrid_api_key =
+  System.get_env("SENDGRID_API_KEY") || "environment variable SENDGRID_API_KEY is missing"
+
+config :roadchat, Roadchat.Mailer,
+  adapter: Swoosh.Adapters.Sendgrid,
+  api_key: sendgrid_api_key,
+  domain: "roadchatapp.com"
+
+config :swoosh, :api_client, Swoosh.ApiClient.Hackney
+
 if config_env() == :prod do
   database_url =
     System.get_env("DATABASE_URL") ||

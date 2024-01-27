@@ -35,7 +35,7 @@ defmodule Roadchat.Servers.UserStateServer do
   def handle_call({:get_user}, _from, state) do
     IO.inspect "inside handle call :get_user 1"
     IO.inspect state
-    [to_caller | new_state] = state
+    [to_caller | _new_state] = state
     # {:reply, to_caller, new_state}
     {:reply, to_caller, state}
   end

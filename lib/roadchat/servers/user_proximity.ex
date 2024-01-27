@@ -1,7 +1,6 @@
 defmodule Roadchat.Servers.UserProximity do
   use GenServer
   alias Roadchat.Repos.GeoLocation
-  alias Roadchat.Servers.UserStateServer
 
   # @tab :user_data
   def start_link(_opts) do
